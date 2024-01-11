@@ -2,11 +2,17 @@
 	"version": 3,
 	"file": "application.css",
 	"sources": [
-		"../scss/application.scss"
+		"../scss/application.scss",
+		"../scss/_style.scss",
+		"../scss/_mixins",
+		"../scss/_base.scss"
 	],
 	"sourcesContent": [
-		""
+		"// ==========================================================================\r\n// Global Imports\r\n// ==========================================================================\r\n\r\n@import 'style';\r\n@import 'mixins';\r\n@import 'base';\r\n@import 'style';",
+		"",
+		"",
+		"// Font stacks\r\n\r\n// font-family: 'Poppins', sans-serif;\r\n\r\nh1 {\r\n     font-family: 'Poppins', Arial, \"Helvetica Neue\", Helvetica, sans-serif; \r\n     font-size: 24px; \r\n     font-style: normal; \r\n     font-variant: normal; \r\n     font-weight: 700; \r\n     line-height: 26.4px; } \r\n     \r\nh3 { \r\n    font-family: 'Poppins', Arial, \"Helvetica Neue\", Helvetica, sans-serif; \r\n    font-size: 14px; \r\n    font-style: normal; \r\n    font-variant: normal; \r\n    font-weight: 700; \r\n    line-height: 15.4px; } \r\n    \r\np { \r\n    font-family: 'Poppins', Arial, \"Helvetica Neue\", Helvetica, sans-serif; \r\n    font-size: 14px; \r\n    font-style: normal; \r\n    font-variant: normal; \r\n    font-weight: 400; \r\n    line-height: 20px; } \r\n    \r\nblockquote { \r\n        font-family: 'Poppins', Arial, \"Helvetica Neue\", Helvetica, sans-serif; \r\n        font-size: 21px; \r\n        font-style: normal; \r\n        font-variant: normal; \r\n        font-weight: 400; \r\n        line-height: 30px; } \r\n        \r\npre { \r\n    font-family: 'Poppins', Arial, \"Helvetica Neue\", Helvetica, sans-serif; \r\n    font-size: 13px; \r\n    font-style: normal; \r\n    font-variant: normal; \r\n    font-weight: 400; \r\n    line-height: 18.5714px; }\r\n"
 	],
 	"names": [],
-	"mappings": ""
+	"mappings": ";AGIA,AAAA,EAAE,CAAC;EACE,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;CAAG;;;AAE3B,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;CAAG;;;AAE1B,AAAA,CAAC,CAAC;EACE,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAAG;;;AAExB,AAAA,UAAU,CAAC;EACH,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAAG;;;AAE5B,AAAA,GAAG,CAAC;EACA,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;CAAG"
 }

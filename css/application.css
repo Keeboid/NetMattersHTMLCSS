@@ -1,2 +1,51 @@
+/* line 5, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+h1 {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+
+/* line 13, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+h3 {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+/* line 21, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+p {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* line 29, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+blockquote {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 37, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+pre {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
 
 /*# sourceMappingURL=application.css.map */
