@@ -1,4 +1,4 @@
-/* line 5, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+/* line 5, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
 h1 {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 24px;
@@ -8,7 +8,7 @@ h1 {
   line-height: 26.4px;
 }
 
-/* line 13, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+/* line 13, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
 h3 {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
@@ -18,7 +18,7 @@ h3 {
   line-height: 15.4px;
 }
 
-/* line 21, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+/* line 21, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
 p {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
@@ -28,7 +28,7 @@ p {
   line-height: 20px;
 }
 
-/* line 29, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+/* line 29, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
 blockquote {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 21px;
@@ -38,7 +38,7 @@ blockquote {
   line-height: 30px;
 }
 
-/* line 37, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/_base.scss */
+/* line 37, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
 pre {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 13px;
