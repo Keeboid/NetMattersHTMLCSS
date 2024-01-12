@@ -48,4 +48,19 @@ pre {
   line-height: 18.5714px;
 }
 
+/* line 45, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
+a {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+/* line 53, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
+b {
+  font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 /*# sourceMappingURL=application.css.map */
