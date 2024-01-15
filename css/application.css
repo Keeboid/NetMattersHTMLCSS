@@ -1,3 +1,21 @@
+/* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_base.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 7, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_base.scss */
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+  line-height: 1.42857143;
+  overscroll-behavior: none;
+}
+
 /* line 5, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
 h1 {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;

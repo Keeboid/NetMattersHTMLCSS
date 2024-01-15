@@ -4,9 +4,9 @@
 	"sources": [
 		"../scss/application.scss",
 		"../scss/abstracts/_all.scss",
+		"../scss/abstracts/_base.scss",
 		"../scss/abstracts/_mixins.scss",
 		"../scss/abstracts/_variables.scss",
-		"../scss/abstracts/_base.scss",
 		"../scss/core/_all.scss",
 		"../scss/core/_reset.scss",
 		"../scss/core/_typography.scss",
@@ -26,8 +26,8 @@
 	],
 	"sourcesContent": [
 		"// ==========================================================================\r\n// Global Imports\r\n// ==========================================================================\r\n\r\n\r\n// Abstract files\r\n// Variables, mixins, similar components\r\n@import \"abstracts/all\";\r\n\r\n// Core files\r\n// Typography, reset, global code\r\n@import \"core/all\";\r\n\r\n// Components\r\n// Buttons, carousels, etc\r\n@import \"components/all\";\r\n\r\n// Layout\r\n// Header, Footer\r\n@import \"layout/all\";\r\n\r\n// Sections\r\n// Other Sections (Update when added to)\r\n@import \"sections/all\";\r\n",
-		"@import 'mixins';\r\n@import 'variables';\r\n@import 'base';",
-		"",
+		"@import 'base';\r\n@import 'mixins';\r\n@import 'variables';\r\n",
+		"*,\r\n*::before,\r\n*::after {\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    position: relative; // Make body a container for sidebar positioning later\r\n\r\n    margin: 0;\r\n\r\n    font-family: 'Poppins', sans-serif;\r\n    font-size: 1rem;\r\n    letter-spacing: 0.025em;\r\n    line-height: 1.42857143;\r\n\r\n    // \r\n    // fixes for potential MacOS issues with compatilbility \r\n    overscroll-behavior: none;\r\n}",
 		"",
 		"",
 		"\r\n@import 'reset';\r\n@import 'typography';\r\n@import 'icons';\r\n",
@@ -48,5 +48,5 @@
 		""
 	],
 	"names": [],
-	"mappings": ";AOIA,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;CAAG;;;AAE1B,AAAA,EAAE,CAAC;EACA,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;CAAG;;;AAEzB,AAAA,CAAC,CAAC;EACC,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAAG;;;AAEvB,AAAA,UAAU,CAAC;EACJ,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAAG;;;AAE3B,AAAA,GAAG,CAAC;EACD,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;CAAG;;;AAE5B,AAAA,CAAC,CAAC;EACI,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;CAAG;;;AAE/B,AAAA,CAAC,CAAC;EACC,WAAW,EAAE,yDAAyD;CACxE"
+	"mappings": ";AEAA,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACL,UAAU,EAAE,UAAU;CACzB;;;AAED,AAAA,IAAI,CAAC;EACD,QAAQ,EAAE,QAAQ;EAElB,MAAM,EAAE,CAAC;EAET,WAAW,EAAE,qBAAqB;EAClC,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,OAAO;EACvB,WAAW,EAAE,UAAU;EAIvB,mBAAmB,EAAE,IAAI;CAC5B;;;AKfD,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;CAAG;;;AAE1B,AAAA,EAAE,CAAC;EACA,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,MAAM;CAAG;;;AAEzB,AAAA,CAAC,CAAC;EACC,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAAG;;;AAEvB,AAAA,UAAU,CAAC;EACJ,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;CAAG;;;AAE3B,AAAA,GAAG,CAAC;EACD,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;CAAG;;;AAE5B,AAAA,CAAC,CAAC;EACI,WAAW,EAAE,yDAAyD;EACtE,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,MAAM;EACpB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;CAAG;;;AAE/B,AAAA,CAAC,CAAC;EACC,WAAW,EAAE,yDAAyD;CACxE"
 }
