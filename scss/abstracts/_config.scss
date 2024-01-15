@@ -1,0 +1,70 @@
+//Global Color definitions
+$white: #fff;
+$black: #000;
+
+$mid-grey: #ddd;
+$mid-grey-02: #ccc; 
+$mid-grey-03: #666;
+$mid-grey-04: #999AA1;
+
+$dark-grey: #323544;
+$darker-grey: #212330;
+
+// Newsletter form 'required' asterisk color
+$asterisk-red: #d24d57; 
+
+// Used to colour the 'Read more' link in the 'careers' tag of the latest news section  
+$careers-blue: #67809f;
+
+//used to color the 'read more' link in the careers tab and the 'news' tab for web dev hire and east anglian air ambulance news
+$careers-red: #ce4125;
+
+// Welcome Section links color under 5* review
+$google-blue: #4387f6;
+$trustpilot-green: #00b67b;
+
+// The color of the 5 stars in the welcome area
+$star-yellow: #ffa500;
+
+// header search form border color
+$focus-blue: #5bc0de;
+
+// Colors for each NM services category
+$services-colours: (
+	'bespoke software': #67809F,
+	'it support': #4183D7,
+	'digital marketing': #2ECC71,
+	'telecoms services': #D64541,
+	'web design': #926FB1,
+	'cyber security': #F62459, 
+	'developer training': #CE4125
+);
+
+// Footer social media colors on hover  
+$social-media-colours: (
+	'facebook': #3b5998,
+	'linkedin': #0077b5,
+	'twitter': #1da1f2,
+	'instagram': #e4405f,
+);
+
+// Consistent container widths for each of the 3 bps
+$container-width: (
+	small: 750px, 
+	medium: 970px, 
+	large: 1200px
+);
+
+// Breakpoint values for the sake of consistency
+$breakpoints: (
+	narrow-to-medium: 768px,
+	medium-to-wide: 992px, 
+	wide-to-extra-wide: 1260px
+);
+
+// Gaps for containers across layout
+$gap: 2rem;
+
+// Placeholder transition time - for secondary-nav transition: <main>, .header,
+// also for .header visibility when scrolling
+$transition-duration-01: 0.4s;
