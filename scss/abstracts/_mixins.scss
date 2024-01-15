@@ -26,3 +26,15 @@
         @warn "Unknown breakpoint: #{$name}.";
     }
 }
+
+//mixin to change color of sm icons in footer on hover etc
+@mixin sm-link-bg-colour-hover($social-media-name) {
+
+    $social-media-colour: map-get($social-media-colours, $social-media-name);
+
+    .footer__sm-link--#{ $social-media-name } {
+        &:hover {
+            background-color: $social-media-colour;
+        }
+    }
+}

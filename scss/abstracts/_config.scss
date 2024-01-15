@@ -1,4 +1,4 @@
-//Global Color definitions
+//Global Color definitions *colors grabbed via devtools from NM site
 $white: #fff;
 $black: #000;
 
@@ -55,7 +55,7 @@ $container-width: (
 	large: 1200px
 );
 
-// Breakpoint values for the sake of consistency
+// Breakpoint values for consistency
 $breakpoints: (
 	narrow-to-medium: 768px,
 	medium-to-wide: 992px, 
@@ -65,6 +65,6 @@ $breakpoints: (
 // Gaps for containers across layout
 $gap: 2rem;
 
-// Placeholder transition time - for secondary-nav transition: <main>, .header,
-// also for .header visibility when scrolling
+// Placeholder transition time 
+//for .header visibility when scrolling
 $transition-duration-01: 0.4s;

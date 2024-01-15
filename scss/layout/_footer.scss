@@ -2,12 +2,15 @@
 
 //the NM logo image in footer
 .footer__logo-container {
-    max-width: 20rem;
+   // max-width: 20rem;
 
     img {
         display: block;
         width: 100%;
+        box-align:fill;
     }
+
+
 }
 
 .footer__heading {
@@ -15,7 +18,7 @@
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 
-    color: $black; //change to $white when bg applied
+    color: $white; //change to $white when bg applied
 
     font-size: 1rem;
     font-weight: 400;
@@ -101,5 +104,50 @@
 
         display: inline;
         margin-left: 0.2rem;
+    }
+}
+
+
+//Footer layout and flex rules
+
+.footer {
+    background-color: $dark-grey;
+    padding-top: 2rem;
+}
+
+.footer__flex-parent-container {
+
+    display: flex; 
+    flex-wrap: wrap;
+    gap: $gap;
+
+    a, a:visited {
+
+        text-decoration: none;
+        color:$white;
+    }
+
+        a:hover {
+    color:$white;
+    text-decoration: underline;
+        }
+        
+}
+
+.footer__flex-item-container {
+
+    flex-grow: 1;  
+    width: 100%;
+
+    &:first-child {  // This targets the logo & social media icons 
+        flex-basis: auto;  
+    }
+
+    &:nth-child(2) {  // This targets the tertiary nav 
+        flex-grow: 2;  
+    }
+
+    @include breakpoint(wide-to-extra-wide) {
+        width: auto;
     }
 }

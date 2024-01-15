@@ -1,12 +1,11 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: border-box; //futureproofing 
 }
 
 body {
-    position: relative; // Make body a container for sidebar positioning later
-
+    position: relative; // Make body a container
     margin: 0;
 
     font-family: 'Poppins', sans-serif;
@@ -15,6 +14,6 @@ body {
     line-height: 1.42857143;
 
     // 
-    // fixes for potential MacOS issues with compatilbility 
+    // fixes for potential MacOS issues with elements showing oddly when scrolling too far up
     overscroll-behavior: none;
 }
