@@ -81,4 +81,109 @@ b {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+/* line 4, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__logo-container {
+  max-width: 20rem;
+}
+
+/* line 7, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__logo-container img {
+  display: block;
+  width: 100%;
+}
+
+/* line 13, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__heading {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 26, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__sm-link {
+  display: inline-block;
+  padding: 1rem 1.25rem 0.75rem;
+  margin: 0.25rem;
+  background-color: #212330;
+}
+
+/* line 34, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__sm-link svg {
+  height: 1.5rem;
+}
+
+/* line 38, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__sm-link path {
+  fill: #fff;
+}
+
+/* line 45, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__nav-list {
+  list-style-type: none;
+  font-size: 0.8rem;
+}
+
+/* line 51, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__nav-item {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+/* line 57, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 62, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+
+/* line 68, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__copyright-section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: #212330;
+  color: #fff;
+}
+
+/* line 78, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__copyright-text {
+  display: block;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  /* line 78, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  .footer__copyright-text {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 89, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  .footer__copyright-text + .footer__legal-text::after {
+    content: ' - ';
+  }
+}
+
+/* line 96, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+.footer__nav-link--sitemap {
+  display: block;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  /* line 96, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  .footer__nav-link--sitemap {
+    display: inline;
+    margin-left: 0.2rem;
+  }
+}
+
 /*# sourceMappingURL=application.css.map */

@@ -1,0 +1,28 @@
+// ===== ALL MIXINS =====//
+
+
+// Used to set the background colour of the primary navigation items in the header
+@mixin service-background-colour-on-hover($service-name) {
+
+    $service-colour: map-get($services-colours, $service-name);
+    $service-modifier-name: str-replace($service-name, ' ', '-');
+
+    .primary-nav__item--#{ $service-modifier-name } {
+        &:hover .primary-nav__item-link {
+            background-color: $service-colour;
+        }
+    }
+}
+
+// For handling media queries
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+        @media (min-width: map-get($breakpoints, $name)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unknown breakpoint: #{$name}.";
+    }
+}

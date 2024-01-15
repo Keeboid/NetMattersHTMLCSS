@@ -209,7 +209,7 @@
             </div>
             <div>
                 <h1>What Our Clients Think</h1>
-                <b>*****</b>
+                <b>*****</b> <!--Stars icons here-->
                 <blockquote>
                     Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
                     <cite>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></cite>
@@ -272,19 +272,19 @@
         </section>
         <hr>
         <section><!-- Case Studies-->
-            <a href="#"><img src="img/case-studies/1.webp" alt="Sweetzy"></a>
-            <a href="#"><img src="img/case-studies/2.webp" alt="Howes Percival"></a>
-            <a href="#"><img src="img/case-studies/3.webp" alt="Girls Day School Trust"></a>
-            <a href="#"><img src="img/case-studies/4.webp" alt="Ashcroft"></a>
-            <a href="#"><img src="img/case-studies/5.webp" alt="Partnership LLP"></a>
-            <a href="#"><img src="img/case-studies/6.webp" alt="One Traveller"></a>
-            <a href="#"><img src="img/case-studies/7.webp" alt="Busseys"></a>
-            <a href="#"><img src="img/case-studies/8.webp" alt="Crane Garden Buildings"></a>
-            <a href="#"><img src="img/case-studies/9.webp" alt="Black Swan Care Group"></a>
-            <a href="#"><img src="img/case-studies/10.webp" alt="Xupes"></a>
-            <a href="#"><img src="img/case-studies/11.webp" alt="Survey Solutions"></a>
-            <a href="#"><img src="img/case-studies/12.webp" alt="Beat Eating Disorders"></a>
-            <a href="#"><img src="img/case-studies/13.webp" alt="Searles Leisure Resort Hunstanton"></a>
+            <a href="#"><img src="img/case-studies/case1.webp" alt="Sweetzy"></a>
+            <a href="#"><img src="img/case-studies/case2.webp" alt="Howes Percival"></a>
+            <a href="#"><img src="img/case-studies/case3.webp" alt="Girls Day School Trust"></a>
+            <a href="#"><img src="img/case-studies/case4.webp" alt="Ashcroft"></a>
+            <a href="#"><img src="img/case-studies/case5.webp" alt="One Traveller"></a>
+            <a href="#"><img src="img/case-studies/case6.webp" alt="Busseys"></a>
+            <a href="#"><img src="img/case-studies/case7.webp" alt="Crane Garden Buildings"></a>
+            <a href="#"><img src="img/case-studies/case8.webp" alt="Black Swan Care Group"></a>
+            <a href="#"><img src="img/case-studies/case9.webp" alt="Xupes"></a>
+            <a href="#"><img src="img/case-studies/case10.webp" alt="Survey Solutions"></a>
+            <a href="#"><img src="img/case-studies/case11.webp" alt="Beat Eating Disorders"></a>
+            <a href="#"><img src="img/case-studies/case12.webp" alt="Searles Leisure Resort Hunstanton"></a>
+            <a href="#"><img src="img/case-studies/case13.webp" alt="Girl Guiding"></a>
         </section>
         <hr><!-- Email Newsletter -->
         <section>
@@ -301,18 +301,20 @@
             </form>
         </section>
         <hr>
-        <footer> <!-- Footer -->
-            <img src="img/nm-company.webp" alt="Netmatters">
+
+
+        <footer class=""> <!-- Footer -->
+            <img src="img/nm-logo-footer.webp" alt="Netmatters" class="footer__logo-container">
             <div>
                 <p>Follow us on:</p>
-                <a href="#">Facebook</a>
-                <a href="#">Linkedin</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="#" class="footer__sm-link ">Facebook</a>
+                <a href="#" class="footer__sm-link ">Linkedin</a>
+                <a href="#" class="footer__sm-link ">Twitter</a>
+                <a href="#" class="footer__sm-link ">Instagram</a>
             </div>
             <div>
-                <h3>About Netmatters</h3>
-                <ul>
+                <h3 class="footer__heading">About Netmatters</h3>
+                <ul class="footer__nav-list">
                     <li><a href="#">News</a></li>
                     <li><a href="#">Our Careers</a></li>
                     <li><a href="#">Our Team</a></li>
@@ -326,8 +328,8 @@
                 </ul>
             </div>
             <div>
-                <h3>Our Services</h3>
-                <ul>
+                <h3 class="footer__heading">Our Services</h3>
+                <ul class="footer__nav-list">
                     <li><a href="#">Bespoke Software</a></li>
                     <li><a href="#">IT Support</a></li>
                     <li><a href="#">Digital Marketing</a></li>
@@ -338,8 +340,8 @@
                 </ul>
             </div>
             <div>
-                <h3>Our Industries</h3>
-                <ul>
+                <h3 class="footer__heading">Our Industries</h3>
+                <ul class="footer__nav-list">
                     <li><a href="#">Financial Services</a></li>
                     <li><a href="#">Construction</a></li>
                     <li><a href="#">Retail & E-Commerce</a></li>
@@ -351,8 +353,8 @@
                 </ul>
             </div>
             <div>
-                <h3>Locations</h3> 
-                <ul> 
+                <h3 class="footer__heading">Locations</h3> 
+                <ul class="footer__nav-list"> 
                     <li><a href="#">London Office</a></li>
                     <li><a href="#">Cambridge Office</a></li>
                     <li><a href="#">Wymondham Office</a></li>
@@ -361,14 +363,17 @@
             </div>
 
 <!-- Copyright Footer -->
-<footer class="copyright footer-bot">
-    <p>&copy; Copyright Netmatters 2023. All rights reserved.    Sitemap<p> <!--Make this into a href #-->
-    <ul>
-       <li class="sitemap-ref"> 
-        <a href="#">Sitemap</a>
+<div class="copyright footer-bot footer__copyright-section">
+    <div class= "responsive_container">
+    <span class="footer_copyright-text">&copy; Copyright Netmatters 2023.</span> 
+    <span class="footer_copyright-text">All rights reserved.</span> <!--Make this into a href #-->
+
+       <span class="footer__nav-link--sitemap"> 
+        <a href="#" class="footer__nav-link--sitemap">Sitemap</a> </span>
        </li> 
     </ul>
+    </div>
+</div>
 </footer>
-
 </body>
 </html>
