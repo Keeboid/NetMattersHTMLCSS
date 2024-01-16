@@ -44,6 +44,18 @@
         flex-grow: 2;  
     }
 
+    a, a:visited {
+
+        text-decoration: none;
+        color:$white;
+    }
+
+        a:hover {
+    color:$white;
+    text-decoration: underline;
+        }
+        
+
     @include breakpoint(wide-to-extra-wide) {
         width: auto;
     }
@@ -56,7 +68,7 @@
    max-height: 100px;
     img {
         display: block;
-        width: 100%;
+        width: 25%;
         box-align:fill;
         
     }
@@ -130,7 +142,8 @@
 .footer__copyright-text {
 
     display: block;
-    font-size: 0.8rem;
+    font-size: .8125rem;
+    padding-top: 10px;
 
 
     @include breakpoint(narrow-to-medium) {
@@ -177,11 +190,13 @@
 
 .footer__flex-item-container--nav-list {
 
+    
+
     @include breakpoint(narrow-to-medium) {
         width: calc(50% - #{$gap});
     }
 
     @include breakpoint(medium-to-wide) {
-        width: calc(45% - #{$gap}); //was 25%
+        width: calc(25% - #{$gap}); //was 25%
     }
 }

@@ -286,54 +286,77 @@
             <a href="#"><img src="img/case-studies/case12.webp" alt="Searles Leisure Resort Hunstanton"></a>
             <a href="#"><img src="img/case-studies/case13.webp" alt="Girl Guiding"></a>
         </section>
-        <hr><!-- Email Newsletter -->
-        <section>
-            <h3>Email Newsletter Sign-up</h3>
-            <form>
-                <label for="name">Your Name <span class="required">*</span></label>
-                <input type="text" name="name" id="name">
-                <label for="email">Your Email <span class="required">*</span></label>
-                <input type="email" name="email" id="email">
-                <input type="checkbox" name="marketing" id="marketing"><label>
-                    Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a>  for more information on how we keep your data safe.
+
+<hr><!-- Email Newsletter Form-->
+
+<form class="newsletter-form">
+    <div class="responsive_container">
+
+        <h2 class="newsletter-form__heading">Email Newsletter Sign-up</h2>
+
+        <div class="newsletter-form__flex-container">
+            <div class="newsletter-form__input-container newsletter-form__input-container--required">
+                <label for="newsletter-form-name" class="newsletter-form__label">Your Name</label>
+                <input type="text" id="newsletter-form-name" name="name"  required>
+            </div>
+
+            <div class="newsletter-form__input-container newsletter-form__input-container--required">
+                <label for="newsletter-form-email" class="newsletter-form__label">Your Email</label>
+                <input type="email" id="newsletter-form-email" name="email" required class="newsletter-form__input--text">
+            </div>    
+        </div>
+
+        <div class="newsletter-form__checkbox-flex-container">        
+                <input type="checkbox" name="marketing" id="newsletter-form-preferences" class="newsletter-form__input--checkbox">
+                <label for="newsletter-form-preferences" name="marketing" class="newsletter-form__label">
+                    <span>
+                    Please tick 
+                    this box 
+                    if you wish to receive marketing information from us. Please see our <a href="#" target="_blank">Privacy Policy</a>  for more information on how we keep your data safe.
+                    </span>
                 </label>
-                <button type="submit">Subscribe</button>
-            </form>
-        </section>
-        <hr>
+        </div>
+
+                <button type="submit" class="newsletter-form__btn">Subscribe</button>
+     </div>
+</form>
+        
+<hr>
 
 
 <footer class="footer"> <!-- Footer -->
     <div class="responsive_container">
-        <div class="footer__flex-parent-container">
-
-        <div class="footer__logo-container">
+        <div class="footer__flex-parent-container footer__logo-container">
             <img src="img/nm-logo-footer.webp" alt="Netmatters">
+       
+            <div id="sm-nav" class="footer__flex-item-container">
+                    <h2 class="footer__heading">Follow us on:</h2>
+                    <a href="#" class="footer__sm-link footer__social-media-link--facebook">Facebook</a>
+                    <a href="#" class="footer__sm-link footer__social-media-link--linkedin">Linkedin</a>
+                    <a href="#" class="footer__sm-link footer__social-media-link--twitter">Twitter</a>
+                    <a href="#" class="footer__sm-link footer__social-media-link--instagram">Instagram</a>
+            </div>
         </div>
 
-            <div class="footer_flex-item-container">
-            <div id="sm-nav">
-                <h2 class="footer__heading">Follow us on:</h2>
-                <a href="#" class="footer__sm-link footer__social-media-link--facebook">Facebook</a>
-                <a href="#" class="footer__sm-link footer__social-media-link--linkedin">Linkedin</a>
-                <a href="#" class="footer__sm-link footer__social-media-link--twitter">Twitter</a>
-                <a href="#" class="footer__sm-link footer__social-media-link--instagram">Instagram</a>
-            </div>
-            <div id="about-nm-footer-nav" class="footer__flex-item-container footer__flex-item-container--nav-list">
-                <h3 class="footer__heading">About Netmatters</h3>
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a href="#">News</a></li>
-                    <li class="footer__nav-item"><a href="#">Our Careers</a></li>
-                    <li class="footer__nav-item"><a href="#">Our Team</a></li>
-                    <li class="footer__nav-item"><a href="#">Contact Us</a></li>
-                    <li class="footer__nav-item"><a href="#">Privacy Policy</a></li>
-                    <li class="footer__nav-item"><a href="#">Cookie Policy</a></li>
-                    <li class="footer__nav-item"><a href="#">Data Retention & Disposal Policy</a></li>
-                    <li class="footer__nav-item"><a href="#">CCTV Policy</a></li>
-                    <li class="footer__nav-item"><a href="#">Environmental Policy</a></li>
-                    <li class="footer__nav-item"><a href="#">Terms & Conditions</a></li>
-                </ul>
-            </div>
+        <nav>
+                <div id="about-nm-footer-nav" class="footer__flex-item-container footer__flex-item-container--nav-list">
+                    <h3 class="footer__heading">About Netmatters</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#">News</a></li>
+                        <li class="footer__nav-item"><a href="#">Our Careers</a></li>
+                        <li class="footer__nav-item"><a href="#">Our Team</a></li>
+                        <li class="footer__nav-item"><a href="#">Contact Us</a></li>
+                        <li class="footer__nav-item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer__nav-item"><a href="#">Cookie Policy</a></li>
+                        <li class="footer__nav-item"><a href="#">Data Retention & Disposal Policy</a></li>
+                        <li class="footer__nav-item"><a href="#">CCTV Policy</a></li>
+                        <li class="footer__nav-item"><a href="#">Environmental Policy</a></li>
+                        <li class="footer__nav-item"><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+    
+        <div class="footer__flex-parent-container footer__flex-parent-container--tertiary-nav">
             <div id="services-footer-nav" class="footer__flex-item-container footer__flex-item-container--nav-list">
                 <h3 class="footer__heading">Our Services</h3>
                 <ul class="footer__nav-list">
@@ -367,9 +390,11 @@
                     <li class="footer__nav-item"><a href="#">Wymondham Office</a></li>
                     <li class="footer__nav-item"><a href="#">Great Yarmouth Office</a></li>
                 </ul>
-            </div>
-        </div> <!--footer_flex-item-container -->
-    </div> <!--footer parent flex container-->
+             </div>
+         </div>
+        </nav>
+     </div> <!--footer_flex-item-container -->
+   </div> <!--footer parent flex container-->
 </div> <!--responsive_container-->
 
 
@@ -381,8 +406,6 @@
 
        <span class="footer__nav-link--sitemap"> 
         <a href="#" class="footer__nav-link--sitemap">Sitemap</a> </span>
-       </li> 
-    </ul>
     </div>
 </div>
 </footer>
