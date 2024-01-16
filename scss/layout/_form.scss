@@ -1,0 +1,117 @@
+.newsletter-form {
+background-color: $mid-grey;
+padding: 3.125rem 0;
+}
+
+.newsletter-form__heading {
+ margin: 0 0 1rem;
+ font-size: 2rem;
+ font-weight: 400;
+ color: $label-grey;
+}
+
+.newsletter-form__flex-container { //main grey box around form; mq for med-wide bp
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+
+    @include breakpoint(medium-to-wide) {
+    flex-direction: row;
+    gap:2rem;
+    justify-content: center;
+    }
+}
+
+.newletter-form__input-container {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.newsletter-form__label {
+
+    display: inline-block;
+    font-weight: 600;
+    line-height: 2;
+
+    color:$label-grey;
+
+    a{
+        text-decoration: underline;
+        font-size: 1rem;
+        &:hover, &:visited {
+            color:$label-grey;
+        }
+    }
+}
+
+.newsletter-form__btn {
+    @extend %global__button;
+@include background-with-darken-on-hover($dark-grey);
+    margin-top: 0.7rem;
+    background-color: $dark-grey;
+}
+
+.newsletter-form__checkbox-flex-container { //checkbox flex display
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-form__input--text {
+    display: block;
+    width:100%; //or 100%
+    height:3rem;
+    padding: 5px 15px;
+    border: 1px solid $mid-grey-02;
+    color: $mid-grey-03;
+    font-size: 0.875rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &:focus {
+        border-color: #5bc0de;
+        outline:0;
+        box-shadow:inset 0 1px 1px rgba(0,0,0, 0.75), 0 0 8px rgba(91,192,222,.6)
+    }
+}
+
+.newsletter-form__input-container--required label::after { //add red asterisk for required fields - will not be printed in basic or read by screen readers
+    content: '*';
+    color: $asterisk-red;
+    padding-left: 0.2em;
+}
+
+//===== Custom Checkbox =====//
+
+.newsletter-form__input--checkbox {
+    opacity: 0; //hide default checkbox
+    position:absolute //still usable by tab select/screen readers
+}
+
+.newsletter-form__label[for="newsletter-form-preferences"] {
+    display: flex;
+    align-items: center; //aligning checkbox with label
+}
+
+.newsletter-form__label[for="newsletter-form-preferences"]::before {
+
+    //custom checkbox
+    content: '';
+    display: inline-block;
+    align-self: start;
+    min-width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+    border: 0.2rem solid $label-grey;
+    border-radius: 0.2rem;
+    font-size: 1.25rem;
+}
+
+.newsletter-form__input--checkbox:checked + newsletter-form__label::before {
+    //when checkbox is checked
+    content: '✓';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-grey;
+    color: $white;
+}
