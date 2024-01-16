@@ -1,0 +1,21 @@
+%global__button {
+
+    // Align text with icons (svg)
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    padding: 0.75em 1em;
+    border: none;
+    border-radius: 0.25em;
+
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

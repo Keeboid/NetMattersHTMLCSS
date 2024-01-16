@@ -1,20 +1,5 @@
 // ===== ALL MIXINS =====//
 
-
-// Used to set the background colour of the primary navigation items in the header
-@mixin service-background-colour-on-hover($service-name) {
-
-    $service-colour: map-get($services-colours, $service-name);
-    $service-modifier-name: str-replace($service-name, ' ', '-');
-
-    .primary-nav__item--#{ $service-modifier-name } {
-        &:hover .primary-nav__item-link {
-            background-color: $service-colour;
-        }
-    }
-}
-
-
 //=====BREAKPOINT MIXINS=====//
 
 // For handling media query syntax 
@@ -29,6 +14,31 @@
         @warn "Unknown breakpoint: #{$name}.";
     }
 }
+
+// Used to set the background colour of the primary navigation items in the header
+@mixin service-background-colour-on-hover($service-name) {
+
+    $service-colour: map-get($services-colours, $service-name);
+    $service-modifier-name: str-replace($service-name, ' ', '-');
+
+    .primary-nav__item--#{ $service-modifier-name } {
+        &:hover .primary-nav__item-link {
+            background-color: $service-colour;
+        }
+    }
+}
+
+//== Mixin to set the bg on hover + darken it (e.g. hover in subscribe button)
+
+@mixin background-with-darken-on-hover($background-colour) {
+
+    background-color: $background-colour;
+
+    &:hover {
+        background-color: darken($background-colour, 15%);
+    }
+}
+
 
 // Set appropriate container width for each breakpoint with one mixin
 @mixin set-container-width-for-breakpoints() {
