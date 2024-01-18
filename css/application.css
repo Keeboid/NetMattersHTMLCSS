@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_base.scss */
 *,
 *::before,
@@ -20,6 +19,19 @@ body {
 /* line 2, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_utility.scss */
 .no-line-break {
   white-space: nowrap;
+}
+
+/* line 7, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_utility.scss */
+.screen-reader {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* line 5, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/core/_typography.scss */
@@ -412,6 +424,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -423,15 +436,17 @@ main {
   }
 }
 
-/* line 26, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 27, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newletter-form__input-container {
+  display: flex;
   margin-left: -15px;
   margin-bottom: 1rem;
   width: 300%;
   flex-grow: 1;
+  display: flex;
 }
 
-/* line 33, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 36, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label {
   display: inline-block;
   font-weight: 600;
@@ -439,18 +454,18 @@ main {
   color: #272936;
 }
 
-/* line 41, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 44, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label a {
   text-decoration: underline;
   font-size: 1rem;
 }
 
-/* line 44, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 47, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label a:hover, .newsletter-form__label a:visited {
   color: #272936;
 }
 
-/* line 50, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 53, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__btn {
   background-color: #323544;
   margin-top: 0.7rem;
@@ -462,16 +477,15 @@ main {
   background-color: #121318;
 }
 
-/* line 57, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 60, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__checkbox-flex-container {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 63, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 66, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--text {
-  display: flex;
   width: 100%;
   height: 3rem;
   padding: 5px 15px;
@@ -482,7 +496,7 @@ main {
 }
 
 @media (min-width: 1260px) {
-  /* line 63, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+  /* line 66, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
   .newsletter-form__input--text {
     display: flex;
     flex-grow: 1;
@@ -491,33 +505,33 @@ main {
   }
 }
 
-/* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 84, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--text:focus {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 88, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 91, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input-container--required label::after {
   content: '*';
   color: #d24d57;
   padding-left: 0.2em;
 }
 
-/* line 96, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 99, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--checkbox {
   opacity: 0;
   position: absolute;
 }
 
-/* line 101, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 104, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label[for="newsletter-form-preferences"] {
   display: flex;
   align-items: center;
 }
 
-/* line 106, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 109, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label[for="newsletter-form-preferences"]::before {
   content: '';
   display: inline-block;
@@ -530,9 +544,9 @@ main {
   font-size: 1.25rem;
 }
 
-/* line 120, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 123, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--checkbox:checked + newsletter-form__label::before {
-  content: '✓';
+  content: 'o';
   display: flex;
   justify-content: center;
   align-items: center;
@@ -641,6 +655,13 @@ main {
 /* line 37, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
 .case-studies__pop-up-link--web:hover {
   background-color: #485b72;
+}
+
+/* line 92, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-studies__pop-up-link--web i {
+  font-size: 1rem;
+  margin-left: 0.1rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=application.css.map */
