@@ -1,3 +1,16 @@
+.case-studies {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.logo-scrolling-flex-parent-container {
+
+    display: flex;
+    justify-content: center;
+    overflow-x: clip;
+    gap: 6rem;
+}
+
 .case-study__single-section {
 
     display: flex;
@@ -35,13 +48,44 @@
     padding: 1.25rem;
     width: 18rem;
     bottom: 100%;
-    margin-right: auto;
     margin-left: auto;
-    margin-bottom: auto;
+    margin-right: auto;
+    margin-bottom: 3rem; //auto
 
     .icon {
         width: 1rem; //placeholder for arrow icon in the button; add this soon
         margin-left: 0.25rem;
         fill: $white;
     }
+}
+
+.case-study__pop-up-box::after {
+
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left:50%;
+    transform: translateX(-50%);
+    right:50%;
+    width: 0;
+    height: 0;
+    border-left: 2rem solid transparent;
+    border-right: 2rem solid transparent;
+    border-top: 2rem solid $dark-grey;
+}
+
+.case-study__pop-up-heading {
+
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.case-study__pop-up-section {
+    font-size: 0.82rem; //font size of description
+}
+
+.case-studies__pop-up-link--web{
+    @extend %global__button;
+    @include background-with-darken-on-hover(map-get($services-colours, 'bespoke software'));
 }

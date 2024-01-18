@@ -93,7 +93,7 @@ b {
 }
 
 /* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
-.newsletter-form__btn {
+.newsletter-form__btn, .case-studies__pop-up-link--web {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -107,7 +107,7 @@ b {
 }
 
 /* line 18, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
-.newsletter-form__btn:hover {
+.newsletter-form__btn:hover, .case-studies__pop-up-link--web:hover {
   text-decoration: none;
 }
 
@@ -541,6 +541,20 @@ main {
 }
 
 /* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-studies {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* line 6, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.logo-scrolling-flex-parent-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: clip;
+  gap: 6rem;
+}
+
+/* line 14, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__single-section {
   display: flex;
   flex-direction: column;
@@ -549,18 +563,18 @@ main {
   text-align: center;
 }
 
-/* line 8, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+/* line 21, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__single-section img {
   max-height: 4.5rem;
   filter: grayscale(1);
 }
 
-/* line 12, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+/* line 25, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__single-section img:hover {
   filter: grayscale(0);
 }
 
-/* line 19, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+/* line 32, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__pop-up-hover-container {
   position: absolute;
   display: none;
@@ -568,28 +582,65 @@ main {
   bottom: 100%;
 }
 
-/* line 27, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+/* line 40, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__single-section:hover .case-study__pop-up-hover-container {
   display: block;
 }
 
-/* line 31, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+/* line 44, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__pop-up-box {
   background-color: #323544;
   color: #fff;
   padding: 1.25rem;
   width: 18rem;
   bottom: 100%;
-  margin-right: auto;
   margin-left: auto;
-  margin-bottom: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
 }
 
-/* line 42, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+/* line 55, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-study__pop-up-box .icon {
   width: 1rem;
   margin-left: 0.25rem;
   fill: #fff;
+}
+
+/* line 62, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-study__pop-up-box::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 50%;
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 2rem solid #323544;
+}
+
+/* line 77, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-study__pop-up-heading {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* line 84, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-study__pop-up-section {
+  font-size: 0.82rem;
+}
+
+/* line 88, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-studies__pop-up-link--web {
+  background-color: #67809F;
+}
+
+/* line 37, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.case-studies__pop-up-link--web:hover {
+  background-color: #485b72;
 }
 
 /*# sourceMappingURL=application.css.map */
