@@ -1,0 +1,47 @@
+.case-study__single-section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    img {
+        max-height: 4.5rem;
+        //unhovered - greyscale
+        filter: grayscale(1);
+        &:hover {
+            //on hover - colored
+            filter: grayscale(0);
+        }
+    }
+}
+
+.case-study__pop-up-hover-container {
+
+    position: absolute;
+    display: none; //hides info unless hovered
+    width: 20rem;
+    bottom: 100%;
+}
+
+.case-study__single-section:hover .case-study__pop-up-hover-container {
+    display: block; //shows info on hover
+}
+
+.case-study__pop-up-box {
+
+    background-color: $dark-grey;
+    color: $white;
+    padding: 1.25rem;
+    width: 18rem;
+    bottom: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+
+    .icon {
+        width: 1rem; //placeholder for arrow icon in the button; add this soon
+        margin-left: 0.25rem;
+        fill: $white;
+    }
+}

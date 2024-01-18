@@ -67,7 +67,8 @@
    // max-width: 20rem;
    max-height: 100px;
     img {
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 25%;
         box-align:fill;
         
@@ -179,9 +180,12 @@
 
 // Modifiers
 
-.footer__flex-parent-container--tertiary-nav {
+.footer__flex-parent-container--tertiary-nav { //change display/margin-top depending on fixes needed
     
+    display: flex;
+    margin-top: 5%;
     flex-direction: column;
+
 
     @include breakpoint(narrow-to-medium) {
         flex-direction: row;
