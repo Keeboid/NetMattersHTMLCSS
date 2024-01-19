@@ -437,13 +437,9 @@ main {
 }
 
 /* line 27, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
-.newletter-form__input-container {
-  display: flex;
-  margin-left: -15px;
+.newsletter-form__input-container {
   margin-bottom: 1rem;
-  width: 300%;
-  flex-grow: 1;
-  display: flex;
+  width: 100%;
 }
 
 /* line 36, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */

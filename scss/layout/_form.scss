@@ -24,13 +24,13 @@ padding: 3.125rem 0;
     }
 }
 
-.newletter-form__input-container {
-    display: flex; //
-    margin-left: -15px;
+.newsletter-form__input-container {
+    //display: flex; //
+    //margin-left: -15px;
     margin-bottom: 1rem; //1
-    width: 300%;
-    flex-grow: 1;
-    display: flex;
+    width: 100%;
+    //flex-grow: 1;
+    //gap: 2rem;
 }
 
 .newsletter-form__label {
