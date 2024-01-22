@@ -1,0 +1,176 @@
+.news {
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+.news__main-header {
+
+    margin: 0;
+    color: $dark-grey;
+    font-size: 2.25rem;
+    text-decoration: none;
+
+}
+
+.news__view-all {
+
+    color: $dark-grey;
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.news__main-card {
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+
+    &:hover {
+        top: -10px;
+        transition: .5s ease;
+    }
+}
+
+.news__image {
+    display: block;
+    width: 100%;
+}
+
+.news__category-label-blue { //change color for other label
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    padding: 0.25em 1em;
+    color: $white;
+    background-color: $careers-blue; //default; 2/3 cards have this
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.news__category-label { //change color for other label
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    padding: 0.25em 1em;
+    color: $white;
+    background-color: $careers-red; //default; 2/3 cards have this
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+.news__text-container {
+    padding: 1.875rem;
+    border: 1px solid $mid-grey-02;
+    border-top: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+}
+
+.news__card-title {
+    display: inline;
+    font-size: 1rem;
+}
+
+.news__read-length {
+    color: $mid-grey-04;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    &:before {
+        content: '-';
+        padding-right: 0.5em;
+    }
+}
+
+.news__text {
+    margin-bottom: 2rem;
+    color: $mid-grey-03;
+    font-size: 0.8125rem;
+}
+
+.news__read-more-button { 
+    @extend %global__button;
+    //color: $black;
+}
+
+.news__author-container {
+    display: flex;
+    align-items: center;
+    padding-top: 1.875rem;
+    border-top: 1px solid $mid-grey-02;
+    margin-top: 1.875rem;
+}
+
+.news__author-image {
+    max-width: 3.125rem;
+    height: 100%;
+    border-radius: 50%; //make author image rounded
+}
+
+.news__author-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    font-size: 0.875rem;
+}
+
+.news__posted-by {
+    font-weight: 600;
+    color: $dark-grey;
+}
+
+.news__posted-date {
+    display: block;
+    color: $mid-grey-03;
+}
+
+//mod if eye ers
+
+.news__card-title--careers { //1st card title color
+    color: $careers-blue;
+}
+
+.news__card-title--news-red { //2nd and 3rd card title colors
+    color: $careers-red;
+}
+
+.news__read-more-careers {
+    @include background-with-darken-on-hover ($careers-blue) //make button blue for careers news
+}
+
+.news__read-more-news {
+    @include background-with-darken-on-hover ($careers-red) //button red for 2nd and 3rd news card
+}
+
+.news__view-all-wide {
+   @include show-on-medium-viewport-and-above
+}
+
+.news__view-all-narrow {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+
+    @include hide-on-medium-viewport-and-above
+}

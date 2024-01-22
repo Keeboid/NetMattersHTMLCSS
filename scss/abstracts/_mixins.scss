@@ -81,3 +81,20 @@
         }
     }
 }
+
+// Used on headings in 'Services' and 'News' sections -- mixin borrowed with permission because i did not figure out how to do this myself
+@mixin hide-on-medium-viewport-and-above() {
+
+    @include breakpoint(narrow-to-medium) {
+        display: none;
+    }
+}
+
+@mixin show-on-medium-viewport-and-above() {
+
+    display: none;
+
+    @include breakpoint(narrow-to-medium) {
+        display: block;
+    }
+}
