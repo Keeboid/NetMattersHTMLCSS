@@ -1,0 +1,114 @@
+//layout
+
+.welcome {
+
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    background-color: $dark-grey;
+    color: $white;
+
+}
+
+.welcome__flex-parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+}
+
+.welcome__flex-item-container {
+    @include breakpoint(medium-to-wide) {
+        //turns into row of 2
+        width: calc(50% - #{$gap} / 2);
+    }
+}
+
+//rest
+
+.welcome__heading {
+    margin-top: 0;
+    font-size: 2.25rem;
+}
+
+.welcome__paragraph {
+    margin-bottom: 2rem;
+    line-height: 1.875rem;
+
+    a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+    }
+}
+
+.welcome__button {
+    @extend %global__button;
+    @include background-with-darken-on-hover($darker-grey);
+
+    margin: 0 0.5rem 1rem 0;
+    font-size: 1.25rem;
+
+    @extend %arrow-icon-for-button;
+}
+
+.welcome__testimonial {
+    margin: 2rem;
+}
+
+.welcome__stars {// placeholder
+    position: relative;
+    color: $star-yellow;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.welcome__testimonial-quote {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.welcome__quote-author {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    a {
+        color: $white;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.welcome__quote-author-name {
+    color: $mid-grey-02;
+}
+
+.welcome__testimonial-author-affiliation {
+    &:before {
+        content: '-';
+        padding: 0 0.5em;
+    }
+}
+
+//mods 
+
+.welcome__paragraph--one {
+    font-weight: 600;
+
+}
+
+.welcome__button-link--blue{
+    @include background-with-darken-on-hover($google-blue);
+}
+
+.welcome__button-link--green {
+    @include background-with-darken-on-hover($trustpilot-green)
+}

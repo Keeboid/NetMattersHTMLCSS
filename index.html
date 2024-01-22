@@ -203,6 +203,8 @@
         </section>
         <hr>
 
+    </div> <!--Main responsive container-->
+
         <!-- Partners Section -->
         <div id="partners">
             PARTNERS Slideshow Placeholder
@@ -210,13 +212,13 @@
         <hr>
 
 
-        <section id="welcome">
+        <section class="welcome" id="welcome">
 <div class="container__main">
     <div class="welcome__flex-parent-container">
-            <div class="welcome__flex-item">
+            <div class="welcome__flex-item-container">
                 <h2 class="welcome__heading">Welcome to Netmatters</h2>
 
-                <p class="welcome__paragraph--one">Netmatters is a leading <a href="#">Bespoke Software</a>, 
+                <p class="welcome__paragraph welcome__paragraph--one">Netmatters is a leading <a href="#">Bespoke Software</a>, 
                    <a href="#"> IT Support</a>, 
                     and <a href="#"> Marketing </a>
                     company based in the East of England with offices in 
@@ -240,22 +242,37 @@
             </div>
 
 
-            <div>
-                <h1>What Our Clients Think</h1>
-                <b>*****</b> <!--Stars icons here-->
-                <blockquote>
-                    Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</p>
-                    <cite>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></cite>
+            <div class="welcome__flex-item-container">
+                <h2 class="welcome__heading">What Our Clients Think</h2>
+
+                <b class="welcome__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </b> <!--Stars icons here-->
+
+                <blockquote class="welcome__testimonial">
+                    <span class="welcome__testimonial-quote">Netmatters stood out from the start. 
+                        Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled &mdash; they know their stuff! 
+                        They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients &mdash; and we are!</span>
+
+                <footer class="welcome__quote-author">
+                    <span class="welcome__quote-author-name">Eleanor Bishop, 
+                        Head of Marketing</span>
+                        <span class="welcome__testimonial-author-affiliation"><a href="#">Ashcroft Partnership LLP</a></span>
+                </footer>
                 </blockquote>
-                <a href="#">Google Reviews</a>
-                <a href="#">Trustpilot Reviews</a>
+                <a href="#" class="welcome__button welcome__button-link--blue ">Google Reviews</a>
+                <a href="#" class="welcome__button welcome__button-link--green">Trustpilot Reviews</a>
             </div>
     </div>
 </div>
         </section>
 
 
-</div> <!--Main responsive container-->
+
 
 
         <hr>
