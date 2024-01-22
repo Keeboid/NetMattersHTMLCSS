@@ -97,3 +97,14 @@
 
 }
 
+.case-studies__pop-up-link--green{
+    @extend %global__button;
+    @include background-with-darken-on-hover (map-get($services-colours, 'digital marketing'));
+
+    i{ //targets arrow icon
+        font-size: 1rem;
+        margin-left: 0.1rem;
+        color: $white;
+    }
+
+}

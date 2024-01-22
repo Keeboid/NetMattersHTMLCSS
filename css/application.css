@@ -105,7 +105,7 @@ b {
 }
 
 /* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
-.newsletter-form__btn, .case-studies__pop-up-link--web, .news__read-more-button {
+.newsletter-form__btn, .case-studies__pop-up-link--web, .case-studies__pop-up-link--green, .news__read-more-button {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -119,7 +119,7 @@ b {
 }
 
 /* line 18, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
-.newsletter-form__btn:hover, .case-studies__pop-up-link--web:hover, .news__read-more-button:hover {
+.newsletter-form__btn:hover, .case-studies__pop-up-link--web:hover, .case-studies__pop-up-link--green:hover, .news__read-more-button:hover {
   text-decoration: none;
 }
 
@@ -655,6 +655,23 @@ main {
 
 /* line 92, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
 .case-studies__pop-up-link--web i {
+  font-size: 1rem;
+  margin-left: 0.1rem;
+  color: #fff;
+}
+
+/* line 100, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-studies__pop-up-link--green {
+  background-color: #2ECC71;
+}
+
+/* line 37, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.case-studies__pop-up-link--green:hover {
+  background-color: #208e4e;
+}
+
+/* line 104, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_cases.scss */
+.case-studies__pop-up-link--green i {
   font-size: 1rem;
   margin-left: 0.1rem;
   color: #fff;
