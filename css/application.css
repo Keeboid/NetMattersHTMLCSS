@@ -1074,4 +1074,28 @@ main {
   background-color: #006a47;
 }
 
+/* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_partners.scss */
+.partners {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* line 6, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_partners.scss */
+.partners img {
+  filter: grayscale(1);
+}
+
+/* line 9, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_partners.scss */
+.partners img:hover {
+  filter: grayscale(0);
+}
+
+/* line 15, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_partners.scss */
+.logo__flex-parent-container {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  overflow-x: clip;
+}
+
 /*# sourceMappingURL=application.css.map */

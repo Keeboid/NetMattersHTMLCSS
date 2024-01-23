@@ -1,0 +1,20 @@
+.partners {
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    img {
+        filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}
+
+.logo__flex-parent-container {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    overflow-x: clip;
+}
