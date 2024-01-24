@@ -15,7 +15,7 @@
     }
 }
 
-// Used to set the background colour of the primary navigation items in the header
+// Used to set the background colour of the primary navigation items in the header //mixin borrowed from web search
 @mixin service-background-colour-on-hover($service-name) {
 
     $service-colour: map-get($services-colours, $service-name);
@@ -98,5 +98,66 @@
 
     @include breakpoint(narrow-to-medium) {
         display: block;
+    }
+}
+
+
+//mixins for panels in services
+
+// Used in the serv panels to reverse the background and text colours on hover ---mixins
+@mixin reverse-panel-colours-on-hover($service-name) {
+
+    $service-colour: map-get($services-colours, $service-name);
+
+    $service-modifier-name: str-replace($service-name, ' ', '-');
+
+    &.services__panel--#{$service-modifier-name} {
+        &:hover {
+            background-color: $service-colour;
+
+            .services__panel-heading {
+                color: $white;
+            }
+
+            .services__panel-description {
+                color: $white;
+            }
+
+            .services__panel-read-more-button {
+                background-color: $white;
+                color: $service-colour;
+            }
+        }
+    }
+}
+
+// Used in the 'Services' section to handle the icon & icon's background colour in the cards, 
+// and these switching on hover 
+@mixin icon-colour-and-hover-reverse($service-name) {
+
+    $service-colour: map-get($services-colours, $service-name);
+
+    $service-modifier-name: str-replace($service-name, ' ', '-');
+
+    &.services__panel--#{ $service-modifier-name } {
+
+        .services__panel-icon-background {
+            background-color: $service-colour;
+        }
+
+        i {
+            color: $white;
+        }
+
+        &:hover {
+
+            .services__card-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: $service-colour;
+            }
+        }
     }
 }

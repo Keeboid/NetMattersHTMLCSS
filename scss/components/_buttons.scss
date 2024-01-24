@@ -1,6 +1,6 @@
 %global__button {
 
-    // Align text with icons (svg)
+    // Align text with icons
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
@@ -25,7 +25,7 @@
     i {
         width: 1.25rem;
         margin-left: 0.5rem;
-        fill: $white;
+        color: $white;
     }
 }
 

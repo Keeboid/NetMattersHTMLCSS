@@ -1,1 +1,48 @@
-//Services grid
+// main grid/flex for services cards
+
+.services {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    //override default user css
+    a {
+        text-decoration: none;
+    }
+}
+
+//fleksboks
+
+.services__flex-container--parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    justify-content: space-between;
+
+    >* {
+        flex-basis: 100%;
+    }
+
+    //target last 4 service panels
+
+    > :nth-last-child(-n+4) {
+
+        @include breakpoint(narrow-to-medium){
+            //4x4 grid
+            max-width: calc(50% - #{$gap} / 2);
+        }
+
+        @include breakpoint(wide-to-extra-wide){
+            // 4x row
+            max-width: calc(24% - #{$gap} / 2);
+        }
+    }
+
+    //first 3 service panels
+    > :nth-child(-n+3){
+
+        @include breakpoint(medium-to-wide) {
+            //3row
+            max-width: calc(32% - #{$gap} / 3); //33% threw off the layout,,,,,hm
+        }
+    }
+}

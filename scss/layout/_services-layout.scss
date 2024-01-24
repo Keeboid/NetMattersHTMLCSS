@@ -1,0 +1,222 @@
+//Services grid
+
+.services__heading {
+    margin: 0;
+    color: $dark-grey;
+    font-size: 2.75rem;
+}
+
+.services__view-link {
+    color: $dark-grey;
+    font-size: 1.625rem;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: none; //remove underline
+    }
+}
+
+.services__panel {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+    padding: 1.875rem; //1.875rem seems to work most places for these
+    border: 1px solid $mid-grey-02;
+    border-radius: 1rem;
+
+    box-shadow: 0 3px 35px rgba($color: #000000, $alpha: 0.1);
+    text-align: center;
+
+    &:hover {
+        top: -0.625rem;
+    }
+
+    //include mixins for colors on hover
+//includes for inverting panel colors upon hovering
+
+//@include reverse-panel-colours-on-hover('bespoke software' 'bespoke software');
+//@include reverse-panel-colours-on-hover('it support');
+//@include reverse-panel-colours-on-hover('digital marketing');
+//@include reverse-panel-colours-on-hover('telecoms services');
+//@include reverse-panel-colours-on-hover('web design');
+//@include reverse-panel-colours-on-hover('cyber security');
+//@include reverse-panel-colours-on-hover('developer training');
+//okay these don't work idk why
+
+}
+
+.services__panel-icon-background {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+
+    i {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+}
+
+//
+
+.services__panel-heading {
+    color: $dark-grey;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.services__panel-description {
+    color: $dark-grey;
+    font-size: 0.8125rem;
+}
+
+.services__panel-read-more-button {
+    @extend %global__button;
+    margin-top: auto;
+}
+
+//setting button colors for each service panel
+
+.services__panel-read-more-button--bespoke-software {
+    @include background-with-darken-on-hover(map-get($services-colours, 'bespoke software'));
+}
+
+.services__panel-read-more-button--it-support {
+    @include background-with-darken-on-hover(map-get($services-colours, 'it support'));
+}
+
+.services__panel-read-more-button--digital-marketing {
+    @include background-with-darken-on-hover(map-get($services-colours, 'digital marketing'));
+}
+
+
+//absolutely violating DRY because my brain is too small to make this mixin work//
+.services__panel--bespoke-software {
+
+    &:hover {
+        background-color: #67809F;
+
+        .services__panel-heading {
+            color: $white;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: #67809F;
+        }
+
+        //
+        .services__panel-icon-background {
+            background-color: map-get($map: $services-colours, $key: 'bespoke software');
+        }
+
+        i {
+            color: $white;
+        }
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'bespoke software');
+            }
+        }
+
+    }
+}
+
+.services__panel--it-support {
+
+    &:hover {
+        background-color: map-get($map: $services-colours, $key: 'it support');
+
+        .services__panel-heading {
+            color: $white;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: #4183D7;
+        }
+
+        //
+
+        .services__panel-icon-background {
+            background-color: map-get($map: $services-colours, $key: 'it support');
+        }
+
+        i {
+            color: $white;
+        }
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'it support');
+            }
+        }
+    }
+}
+
+.services__panel--digital-marketing {
+
+    &:hover {
+        background-color: map-get($map: $services-colours, $key: 'digital marketing');
+
+        .services__panel-heading {
+            color: $white;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: map-get($map: $services-colours, $key: 'digital marketing');
+        }
+
+        //
+
+        .services__panel-icon-background {
+            background-color: map-get($map: $services-colours, $key: 'digital marketing');
+        }
+
+        i {
+            color: $white;
+        }
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'digital marketing');
+            }
+        }
+    }
+}
+
+
+
