@@ -35,17 +35,6 @@
         top: -0.625rem;
     }
 
-    //include mixins for colors on hover
-//includes for inverting panel colors upon hovering
-
-//@include reverse-panel-colours-on-hover('bespoke software' 'bespoke software');
-//@include reverse-panel-colours-on-hover('it support');
-//@include reverse-panel-colours-on-hover('digital marketing');
-//@include reverse-panel-colours-on-hover('telecoms services');
-//@include reverse-panel-colours-on-hover('web design');
-//@include reverse-panel-colours-on-hover('cyber security');
-//@include reverse-panel-colours-on-hover('developer training');
-//okay these don't work idk why
 
 }
 
@@ -60,6 +49,8 @@
     i {
         width: 2rem;
         height: 2rem;
+        font-size: 2rem; //change later?
+        color: $white; //sets icons to white by default
     }
     
 }
@@ -96,9 +87,32 @@
     @include background-with-darken-on-hover(map-get($services-colours, 'digital marketing'));
 }
 
+.services__panel-read-more-button--telecoms-services {
+    @include background-with-darken-on-hover(map-get($services-colours, 'telecoms services'));
+}
+
+.services__panel-read-more-button--web-design {
+    @include background-with-darken-on-hover(map-get($services-colours, 'web design'));
+}
+
+.services__panel-read-more-button--cyber-security {
+    @include background-with-darken-on-hover(map-get($services-colours, 'cyber security'));
+}
+
+.services__panel-read-more-button--developer-training {
+    @include background-with-darken-on-hover(map-get($services-colours, 'developer training'));
+}
 
 //absolutely violating DRY because my brain is too small to make this mixin work//
 .services__panel--bespoke-software {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'bespoke software');
+    }
+
+    i {
+        color: $white;
+    }
 
     &:hover {
         background-color: #67809F;
@@ -115,15 +129,10 @@
             background-color: $white;
             color: #67809F;
         }
+        
 
         //
-        .services__panel-icon-background {
-            background-color: map-get($map: $services-colours, $key: 'bespoke software');
-        }
-
-        i {
-            color: $white;
-        }
+       
 
         &:hover {
             .services__panel-icon-background {
@@ -139,6 +148,14 @@
 }
 
 .services__panel--it-support {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'it support');
+    }
+
+    i {
+        color: $white;
+    }
 
     &:hover {
         background-color: map-get($map: $services-colours, $key: 'it support');
@@ -158,14 +175,6 @@
 
         //
 
-        .services__panel-icon-background {
-            background-color: map-get($map: $services-colours, $key: 'it support');
-        }
-
-        i {
-            color: $white;
-        }
-
         &:hover {
             .services__panel-icon-background {
                 background-color: $white;
@@ -179,6 +188,14 @@
 }
 
 .services__panel--digital-marketing {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'digital marketing');
+    }
+
+    i {
+        color: $white;
+    }
 
     &:hover {
         background-color: map-get($map: $services-colours, $key: 'digital marketing');
@@ -198,14 +215,6 @@
 
         //
 
-        .services__panel-icon-background {
-            background-color: map-get($map: $services-colours, $key: 'digital marketing');
-        }
-
-        i {
-            color: $white;
-        }
-
         &:hover {
             .services__panel-icon-background {
                 background-color: $white;
@@ -219,4 +228,168 @@
 }
 
 
+.services__panel--telecoms-services {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'telecoms services');
+    }
+
+    i {
+        color: $white;
+    }
+
+
+    &:hover {
+        background-color: map-get($map: $services-colours, $key: 'telecoms services');
+
+        .services__panel-heading {
+            color: $white;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: map-get($map: $services-colours, $key: 'telecoms services');
+        }
+
+        //
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'telecoms services');
+            }
+        }
+    }
+}
+
+.services__panel--web-design {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'web design');
+    }
+
+    i {
+        color: $white;
+    }
+
+
+    &:hover {
+        background-color: map-get($map: $services-colours, $key: 'web design');
+
+        .services__panel-heading {
+            color: $white;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: map-get($map: $services-colours, $key: 'web design');
+        }
+
+        //
+
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'web design');
+            }
+        }
+    }
+}
+
+.services__panel--cyber-security {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'cyber security');
+    }
+
+    i {
+        color: $white;
+    }
+
+    &:hover {
+        background-color: map-get($map: $services-colours, $key: 'cyber security');
+
+        .services__panel-heading {
+            color: $white;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: map-get($map: $services-colours, $key: 'cyber security');
+        }
+
+        //
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'cyber security');
+            }
+        }
+    }
+}
+
+.services__panel--developer-training {
+
+    .services__panel-icon-background {
+        background-color: map-get($map: $services-colours, $key: 'developer training');
+    }
+
+    i {
+        color: $white;
+    }
+
+
+    &:hover {
+        background-color: map-get($map: $services-colours, $key: 'developer training');
+
+        .services__panel-heading {
+            color: $white;
+           // line-height: 50%;
+        }
+
+        .services__panel-description {
+            color: $white;
+        }
+
+        .services__panel-read-more-button {
+            background-color: $white;
+            color: map-get($map: $services-colours, $key: 'developer training');
+        }
+
+        //
+
+        &:hover {
+            .services__panel-icon-background {
+                background-color: $white;
+            }
+
+            i {
+                color: map-get($map: $services-colours, $key: 'developer training');
+            }
+        }
+    }
+}
 
