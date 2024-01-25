@@ -1,5 +1,7 @@
 .carousel {
 
+    @extend %clearfix;
+
     position: relative;
     min-height: 550px;
     margin-bottom: 30px;

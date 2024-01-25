@@ -130,6 +130,13 @@ b {
   color: #fff;
 }
 
+/* line 34, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
+.carousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_main.scss */
 main {
   background-color: #fff;
@@ -1581,7 +1588,7 @@ main {
   margin-bottom: 30px;
 }
 
-/* line 9, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 11, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__image img {
   position: absolute;
   margin: 0 auto;
@@ -1591,7 +1598,7 @@ main {
   height: 100%;
 }
 
-/* line 18, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 20, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__image::after {
   content: "";
   position: absolute;
@@ -1601,7 +1608,7 @@ main {
   left: 0;
 }
 
-/* line 28, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 30, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel .carousel__btn {
   align-content: end;
   font-size: 1.25rem;
@@ -1613,12 +1620,12 @@ main {
   background-color: #6c4a89;
 }
 
-/* line 38, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 40, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__image-effect::after {
   background-image: linear-gradient(270deg, transparent 25%, #000);
 }
 
-/* line 43, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 45, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__content {
   display: flex;
   flex-direction: column;
@@ -1633,7 +1640,7 @@ main {
   padding: 60px 15px;
 }
 
-/* line 56, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 58, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__content h1 {
   color: #fff;
   font-weight: 600;
@@ -1642,7 +1649,7 @@ main {
   margin: 0 0 1.25rem;
 }
 
-/* line 64, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 66, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__content p {
   font-weight: 600;
   font-size: 1.25rem;
@@ -1651,26 +1658,26 @@ main {
   margin-bottom: 6px;
 }
 
-/* line 72, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 74, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__content a {
   margin-top: 1.9rem;
   margin-bottom: 1.125rem;
 }
 
 @media (min-width: 1260px) {
-  /* line 43, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  /* line 45, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
   .carousel__content {
     text-align: left;
     align-content: start;
     align-items: start;
     padding-left: 15rem;
   }
-  /* line 84, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  /* line 86, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
   .carousel__content h1 {
     font-size: 4rem;
     line-height: 5rem;
   }
-  /* line 89, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  /* line 91, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
   .carousel__content p {
     font-size: 1.625rem;
     line-height: 2.5rem;
@@ -1678,19 +1685,19 @@ main {
 }
 
 @media (min-width: 992px) {
-  /* line 43, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  /* line 45, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
   .carousel__content {
     text-align: left;
     align-content: start;
     align-items: start;
     padding-left: 8.25rem;
   }
-  /* line 102, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  /* line 104, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
   .carousel__content h1 {
     font-size: 4rem;
     line-height: 5rem;
   }
-  /* line 107, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  /* line 109, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
   .carousel__content p {
     font-size: 1.625rem;
     line-height: 2.5rem;

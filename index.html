@@ -20,22 +20,66 @@
 </head>
 
 <body>
-        <header><!-- HEADER -->
-            <div id="header">
+        <header class="header"><!-- HEADER -->
+        <div class="container__main">
+
+            <div class="header__top-container" id="header">
                 <div id="company-image">
                     <a href="#"><img src="img/nm-logo-header.webp" alt="Netmatters"></a>
                 </div>
-                <div>
-                    <div><a href="#">CALL_MOBILE</a></div>
-                    <div><a href="#">CONTACT</a></div>
-                    <div><a href="#">SUPPORT</a></div>
-                </div>
-                <div>NAV_TOGGLE</div>
-                <form class="form-search">
-                    <input id="search-input">
-                    <button id="search-submit" type="submit">Search</button>
-                </form>
-            </div>
+
+                <a href="#" class="header__support-button">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    Support
+                </a>
+
+        <a href="#" class="header__contact-button"> <i class="fa-regular fa-paper-plane"></i> 
+        Contact </a>
+
+<!--Search bar (med + wide)-->
+
+<form action="#" class="header__search header__search-wide">
+    <label for="search-input-wide" class="screen-reader">Search Website</label>
+    <input type="text" id="search-input-wide" placeholder="Search..." name="keyword"
+    class="header__search-input header__search-input--wide">
+    <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+</form>
+
+
+<!--Phone icon (mobile)-->
+
+<a href="#" class="header__phone-button">
+    <i class="fa-solid fa-phone-volume"></i>
+</a>
+
+<!--Nav menu button??-->
+<button class="header__nav-button">
+    <span>Nav button placeholder</span>
+    <span></span>
+    <span></span> 
+</button>
+
+<!--Search bar (narrow)-->
+
+<form action="#" class="header__search header__search-narrow">
+    <label for="search-input-narrow" class="screen-reader">Search Website</label>
+    <input type="text" id="search-input-narrow" placeholder="Search..." name="keyword"
+    class="header__search-input header__search-input--narrow">
+    <button type="submit" class="header__search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
+
+</div>
+
+</div>
+
+<!--//////////////////// MAIN NAVIGATION /////////////////////////-->
+
+
+       
+
+
             <hr> <!-- NAV BAR -->
             <nav>
                 <b>Bespoke Software</b>
