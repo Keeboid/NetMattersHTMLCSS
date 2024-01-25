@@ -437,22 +437,23 @@ main {
 /* line 20, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__logo-image {
   width: 100%;
+  margin-top: 0.875rem;
 }
 
-/* line 24, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 25, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__phone-button {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  /* line 24, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 25, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__phone-button {
     display: none;
   }
 }
 
-/* line 33, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 34, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__nav-button {
   background-color: #323544;
   display: flex;
@@ -473,7 +474,7 @@ main {
   background-color: #121318;
 }
 
-/* line 50, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 51, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__nav-button span {
   display: block;
   width: 2rem;
@@ -481,7 +482,7 @@ main {
   background-color: #fff;
 }
 
-/* line 59, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 60, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__support-button {
   height: 3.5rem;
   font-size: 1.125rem;
@@ -492,7 +493,7 @@ main {
 }
 
 @media (min-width: 992px) {
-  /* line 59, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 60, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__support-button {
     display: inline-flex;
     background-color: #4183D7;
@@ -503,12 +504,12 @@ main {
   }
 }
 
-/* line 75, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 76, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__support-button i {
   color: #fff;
 }
 
-/* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 82, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__contact-button {
   height: 3.5rem;
   font-size: 1.125rem;
@@ -519,7 +520,7 @@ main {
 }
 
 @media (min-width: 992px) {
-  /* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 82, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__contact-button {
     display: inline-flex;
     background-color: #999AA1;
@@ -530,18 +531,18 @@ main {
   }
 }
 
-/* line 96, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 97, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__contact-button i {
   color: #fff;
 }
 
-/* line 101, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 102, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search {
   position: relative;
   margin: 0.5rem 0;
 }
 
-/* line 107, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 108, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-input {
   display: inline-block;
   width: 15rem;
@@ -552,19 +553,19 @@ main {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-/* line 118, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 119, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-input::placeholder {
   color: #999AA1;
 }
 
-/* line 122, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 123, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-input:focus {
   border-color: #5bc0de;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
   outline: none;
 }
 
-/* line 129, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 130, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-button {
   top: 0.5rem;
   right: 0.2rem;
@@ -573,43 +574,43 @@ main {
   cursor: pointer;
 }
 
-/* line 136, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 137, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-button i {
   font-size: 1.6rem;
 }
 
-/* line 141, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 142, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search--narrow {
   display: block;
   margin-top: 1.2rem;
 }
 
 @media (min-width: 768px) {
-  /* line 141, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 142, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search--narrow {
     display: none;
   }
 }
 
-/* line 149, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 150, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search--narrow button.header__search-button {
   position: absolute;
 }
 
-/* line 154, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 155, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search--wide {
   display: none;
   margin-right: 1rem;
 }
 
 @media (min-width: 768px) {
-  /* line 154, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 155, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search--wide {
     display: flex;
   }
 }
 
-/* line 164, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 165, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-input--narrow {
   width: 100%;
   border: 1px solid #ccc;
@@ -617,7 +618,7 @@ main {
   border-radius: 2px;
 }
 
-/* line 171, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 172, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-input--wide {
   height: 3.5rem;
   background-color: #fff;
@@ -625,28 +626,28 @@ main {
 }
 
 @media (min-width: 768px) {
-  /* line 171, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 172, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search-input--wide {
     width: 10.875rem;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 171, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 172, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search-input--wide {
     display: none;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 171, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 172, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search-input--wide {
     display: inline-block;
     width: 15rem;
   }
 }
 
-/* line 192, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 193, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-button--wide {
   width: 4rem;
   height: 3.5rem;
@@ -656,13 +657,13 @@ main {
   border-radius: 0 0.25rem 0.25rem 0;
 }
 
-/* line 200, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 201, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-button--wide:hover {
   background-color: #72737c;
 }
 
 @media (min-width: 992px) {
-  /* line 192, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 193, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search-button--wide {
     position: relative;
     border-radius: 0.25rem;
@@ -670,13 +671,13 @@ main {
 }
 
 @media (min-width: 1260px) {
-  /* line 192, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+  /* line 193, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
   .header__search-button--wide {
     border-radius: 0 0.25rem 0.25rem 0;
   }
 }
 
-/* line 213, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
+/* line 214, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_header.scss */
 .header__search-button--wide i {
   color: #fff;
 }
