@@ -105,7 +105,7 @@ b {
 }
 
 /* line 1, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
-.newsletter-form__btn, .case-studies__pop-up-link--web, .case-studies__pop-up-link--green, .news__read-more-button, .welcome__button, .services__panel-read-more-button {
+.newsletter-form__btn, .case-studies__pop-up-link--web, .case-studies__pop-up-link--green, .news__read-more-button, .welcome__button, .services__panel-read-more-button, .carousel .carousel__btn {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -119,7 +119,7 @@ b {
 }
 
 /* line 18, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/components/_buttons.scss */
-.newsletter-form__btn:hover, .case-studies__pop-up-link--web:hover, .case-studies__pop-up-link--green:hover, .news__read-more-button:hover, .welcome__button:hover, .services__panel-read-more-button:hover {
+.newsletter-form__btn:hover, .case-studies__pop-up-link--web:hover, .case-studies__pop-up-link--green:hover, .news__read-more-button:hover, .welcome__button:hover, .services__panel-read-more-button:hover, .carousel .carousel__btn:hover {
   text-decoration: none;
 }
 
@@ -1602,11 +1602,23 @@ main {
 }
 
 /* line 28, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+.carousel .carousel__btn {
+  align-content: end;
+  font-size: 1.25rem;
+  background-color: #926FB1;
+}
+
+/* line 39, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.carousel .carousel__btn:hover {
+  background-color: #6c4a89;
+}
+
+/* line 38, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__image-effect::after {
   background-image: linear-gradient(270deg, transparent 25%, #000);
 }
 
-/* line 33, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 43, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__content {
   display: flex;
   flex-direction: column;
@@ -1621,13 +1633,68 @@ main {
   padding: 60px 15px;
 }
 
-/* line 46, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+/* line 56, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
 .carousel__content h1 {
   color: #fff;
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
   margin: 0 0 1.25rem;
+}
+
+/* line 64, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+.carousel__content p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+/* line 72, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+.carousel__content a {
+  margin-top: 1.9rem;
+  margin-bottom: 1.125rem;
+}
+
+@media (min-width: 1260px) {
+  /* line 43, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  .carousel__content {
+    text-align: left;
+    align-content: start;
+    align-items: start;
+    padding-left: 15rem;
+  }
+  /* line 84, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  .carousel__content h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  /* line 89, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  .carousel__content p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 43, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  .carousel__content {
+    text-align: left;
+    align-content: start;
+    align-items: start;
+    padding-left: 8.25rem;
+  }
+  /* line 102, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  .carousel__content h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  /* line 107, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_carousel.scss */
+  .carousel__content p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */

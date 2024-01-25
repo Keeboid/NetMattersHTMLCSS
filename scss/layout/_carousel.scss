@@ -25,6 +25,16 @@
     }
 }
 
+.carousel__btn {
+    
+    align-content: end;
+
+    @extend %global__button;
+    font-size: 1.25rem;
+
+    @include background-with-darken-on-hover(map-get($services-colours, 'web design'))
+}
+
 &__image-effect::after{
 
     background-image: linear-gradient(270deg, transparent 25%, $black);
@@ -51,7 +61,55 @@
         margin: 0 0 1.25rem;
     }
 
+    p {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        margin-top: 0;
+        margin-bottom: 6px;
+    }
 
-}
+    a {
+        margin-top: 1.9rem;
+        margin-bottom: 1.125rem;
+    }
+
+    @include breakpoint(wide-to-extra-wide)
+    {
+        text-align: left;
+        align-content: start;
+        align-items: start;
+        padding-left: 15rem;
+
+        h1{
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+
+        p{
+            font-size: 1.625rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    @include breakpoint(medium-to-wide)
+    {
+        text-align: left;
+        align-content: start;
+        align-items: start;
+        padding-left: 8.25rem;
+
+        h1{
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+
+        p{
+            font-size: 1.625rem;
+            line-height: 2.5rem;
+        }
+    }
+
+  }
 
 }
