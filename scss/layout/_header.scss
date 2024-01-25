@@ -1,0 +1,236 @@
+.header__top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: auto;
+    text-decoration: none;
+
+    @include breakpoint(narrow-to-medium) {
+        max-width: 22rem;
+    }
+
+    @include breakpoint(medium-to-wide) {
+        max-width: 100%;
+    }
+}
+
+.header__logo-image {
+    width: 100%;
+}
+
+.header__phone-button {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    @include breakpoint(narrow-to-medium) {
+        display: none;
+    }
+}
+
+.header__nav-button {
+
+    @include background-with-darken-on-hover($dark-grey);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 3.5rem;
+    width: 4rem;
+    background-color: $dark-grey;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 0.25em;
+
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 2rem;
+        height: 0.25rem;
+        background-color: $white;
+    }
+
+}
+
+.header__support-button {
+
+    @extend %global__button;
+
+    height: 3.5rem;
+    font-size: 1.125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    display: none;
+
+    @include breakpoint(medium-to-wide) {
+        display: inline-flex;
+        @include background-with-darken-on-hover(map-get($services-colours, 'it support'));
+    }
+
+    i {
+        color: $white;
+    }
+}
+
+
+.header__contact-button {
+    @extend %global__button;
+
+    height: 3.5rem;
+    font-size: 1.125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    display: none;
+
+    @include breakpoint(medium-to-wide) {
+        display: inline-flex;
+        @include background-with-darken-on-hover($mid-grey-04);
+    }
+
+    i {
+        color: $white;
+    }
+}
+
+.header__search {
+
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.header__search-input {
+
+    display: inline-block;
+    width: 15rem;
+    padding: 0.75rem 1rem;
+
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    color: $mid-grey-02;
+    font-size: 0.875rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    &::placeholder {
+        color: $mid-grey-04;
+    }
+
+    &:focus {
+        border-color: $focus-blue;
+        box-shadow: inset 0 1px 1px rgba($color: #000000, $alpha: 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
+        outline: none;
+    }
+}
+
+.header__search-button {
+    top: 0.5rem;
+    right: 0.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    i {
+        font-size: 1.6rem; //check if needs changing
+    }
+}
+
+.header__search--narrow {
+    display: block;
+    margin-top: 1.2rem;
+
+    @include breakpoint(narrow-to-medium){
+        display: none;
+    }
+
+    button.header__search-button {
+        position: absolute; //check 
+    }
+}
+
+.header__search--wide {
+    display: none;
+    margin-right: 1rem;
+
+    @include breakpoint(narrow-to-medium){
+        display: flex;
+    }
+}
+
+
+.header__search-input--narrow {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+.header__search-input--wide{
+    height: 3.5rem;
+    background-color: $white;
+    border: 1px solid #ccc;
+    
+
+    @include breakpoint(narrow-to-medium){
+        width: 10.875rem;
+    }
+
+    @include breakpoint(medium-to-wide){
+        display: none;
+    }
+
+    @include breakpoint(wide-to-extra-wide){
+        display: inline-block;
+        width: 15rem;
+    }
+}
+
+
+.header__search-button--wide {
+    width: 4rem;
+    height: 3.5rem;
+    top: 0;
+    right: 0;
+    background-color: $mid-grey-04;
+    border-radius: 0 0.25rem 0.25rem 0;
+
+    &:hover {
+        background-color: darken($mid-grey-04, 15%);
+    }
+
+   @include breakpoint(medium-to-wide){
+    position: relative;
+    border-radius: 0.25rem;
+   }
+
+   @include breakpoint(wide-to-extra-wide) {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+i {
+    color: $white;
+}
+}
+
+/////=====header general layout=====///// 
+
+// .header { //header disappears when scrolling down; appears when scrolling up
+ //   position: fixed;
+  //  top: 0;
+  //  width: 100%;
+  //  z-index: 15;
+  //  background-color: $white;
+  //  transition: transform $transition-duration-01 ease-in-out;
+ //   padding-top: 1.25rem;
+ //   padding-bottom: 1rem;
+ //   margin-bottom: 1.25rem;
+//
+ //   @include breakpoint(medium-to-wide){
+ //       padding-bottom: 0;
+ //       margin-bottom: 0;
+ //   }
+
+//}

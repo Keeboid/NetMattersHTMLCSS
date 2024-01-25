@@ -23,9 +23,10 @@
         <header class="header"><!-- HEADER -->
         <div class="container__main">
 
-            <div class="header__top-container" id="header">
+            <div class="header__top-container">
+
                 <div id="company-image">
-                    <a href="#"><img src="img/nm-logo-header.webp" alt="Netmatters"></a>
+                    <a href="#" class="header__logo"><img src="img/nm-logo-header.webp" alt="Netmatters" class="header__logo-image"></a>
                 </div>
 
                 <a href="#" class="header__support-button">
@@ -38,11 +39,11 @@
 
 <!--Search bar (med + wide)-->
 
-<form action="#" class="header__search header__search-wide">
+<form action="#" class="header__search header__search--wide">
     <label for="search-input-wide" class="screen-reader">Search Website</label>
     <input type="text" id="search-input-wide" placeholder="Search..." name="keyword"
     class="header__search-input header__search-input--wide">
-    <button type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+    <button type="submit" class="header__search-button header__search-button--wide"> <i class="fa-solid fa-magnifying-glass"></i> </button>
 </form>
 
 
@@ -54,14 +55,14 @@
 
 <!--Nav menu button??-->
 <button class="header__nav-button">
-    <span>Nav button placeholder</span>
+    <span></span>
     <span></span>
     <span></span> 
 </button>
 
 <!--Search bar (narrow)-->
 
-<form action="#" class="header__search header__search-narrow">
+<form action="#" class="header__search header__search--narrow">
     <label for="search-input-narrow" class="screen-reader">Search Website</label>
     <input type="text" id="search-input-narrow" placeholder="Search..." name="keyword"
     class="header__search-input header__search-input--narrow">
