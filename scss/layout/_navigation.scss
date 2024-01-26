@@ -55,6 +55,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1.2rem 0;
+    text-decoration: none;
 
     &:hover {
         text-decoration: none;
@@ -106,6 +107,7 @@
 
 .main-nav__submenu-heading {
     font-size: 2rem;
+    font-weight: 600;
 }
 
 .main-nav__submenu-list {
@@ -148,4 +150,91 @@
     }
 
 
-    
+    .main-nav__item--it-support {
+        &:hover .main-nav__item-link {
+            background-color: map-get($map: $services-colours, $key: 'it support');
+        }
+
+        .main-nav__submenu {
+            background-color: darken((map-get($map: $services-colours, $key: 'it support')), 10%);
+        }
+
+        &:hover .main-nav__item-link::after {
+            border-top-color: map-get($map: $services-colours, $key: 'it support');
+        }
+        
+        i {
+            color: darken((map-get($map: $services-colours, $key: 'it support')), 10%);
+        }
+
+        &:hover i {
+            color: $white;
+        }
+    }
+
+
+    .main-nav__item--digital-marketing {
+        &:hover .main-nav__item-link {
+            background-color: map-get($map: $services-colours, $key: 'digital marketing');
+        }
+
+        .main-nav__submenu {
+            background-color: darken((map-get($map: $services-colours, $key: 'digital marketing')), 10%);
+        }
+
+        &:hover .main-nav__item-link::after {
+            border-top-color: map-get($map: $services-colours, $key: 'digital marketing');
+        }
+        
+        i {
+            color: darken((map-get($map: $services-colours, $key: 'digital marketing')), 10%);
+        }
+
+        &:hover i {
+            color: $white;
+        }
+    }
+
+    .main-nav__item--telecoms-services {
+        &:hover .main-nav__item-link {
+            background-color: map-get($map: $services-colours, $key: 'telecoms services');
+        }
+
+        .main-nav__submenu {
+            background-color: darken((map-get($map: $services-colours, $key: 'telecoms services')), 10%);
+        }
+
+        &:hover .main-nav__item-link::after {
+            border-top-color: map-get($map: $services-colours, $key: 'telecoms services');
+        }
+        
+        i {
+            color: darken((map-get($map: $services-colours, $key: 'telecoms services')), 10%);
+        }
+
+        &:hover i {
+            color: $white;
+        }
+    }
+
+    .main-nav__item--web-design {
+        &:hover .main-nav__item-link {
+            background-color: map-get($map: $services-colours, $key: 'web design');
+        }
+
+        .main-nav__submenu {
+            background-color: darken((map-get($map: $services-colours, $key: 'web design')), 10%);
+        }
+
+        &:hover .main-nav__item-link::after {
+            border-top-color: map-get($map: $services-colours, $key: 'web design');
+        }
+        
+        i {
+            color: darken((map-get($map: $services-colours, $key: 'web design')), 10%);
+        }
+
+        &:hover i {
+            color: $white;
+        }
+    }
