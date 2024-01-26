@@ -84,7 +84,7 @@
     }
 }
 
-// Used on headings in 'Services' and 'News' sections -- mixin borrowed with permission because i did not figure out how to do this myself
+// Used on headings in 'Services' and 'News' sections -- 
 @mixin hide-on-medium-viewport-and-above() {
 
     @include breakpoint(narrow-to-medium) {
@@ -102,5 +102,20 @@
 }
 
 
-//mixins for panels in services
+//bg color of nav items in header
 
+
+
+
+//set color of icons 
+@mixin service-background-colour-for-submenu($service-name) {
+
+    $service-colour: map-get($services-colours, $service-name);
+    $service-modifier-name: str-replace($service-name, ' ', '-');
+
+    .main-nav__item--#{ $service-modifier-name } 
+    
+    .main-nav__submenu {
+        background-color: darken($service-colour, 10%);
+    }
+}
