@@ -224,10 +224,10 @@ i {
     width: 100%;
     z-index: 15;
     background-color: $white;
-    transition: transform $transition-duration-01 ease-in-out;
-    padding-top: 1.25rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1.25rem;
+   // transition: transform $transition-duration-01 ease-in-out;
+   // padding-top: 1.25rem;
+  //  padding-bottom: 1rem;
+  //  margin-bottom: 0rem;
 
    @include breakpoint(medium-to-wide){
        padding-bottom: 0;

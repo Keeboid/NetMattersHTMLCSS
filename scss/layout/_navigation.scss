@@ -2,6 +2,7 @@
     display: none;
     background-color: $dark-grey;
     color: $white;
+    text-decoration: none;
 
     @include breakpoint(medium-to-wide) {
         display: block;
@@ -14,11 +15,13 @@
 
     a:visited {
         color: $white;
+        text-decoration: none;
     }
 }
 
 .main-nav-list {
     display: flex;
+    list-style: none;
 }
 
 .main-nav__item {
@@ -80,11 +83,14 @@
         width: 33%;
         padding: 0.625rem 1rem 0.625rem 0;
         margin-top: 1rem;
+        text-decoration: none;
+        list-style: none;
 
         a {
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            text-decoration: none;
 
             i {
                 width: 1.25rem;
@@ -108,6 +114,7 @@
 .main-nav__submenu-heading {
     font-size: 2rem;
     font-weight: 600;
+    padding-left: 2rem;
 }
 
 .main-nav__submenu-list {
@@ -238,3 +245,49 @@
             color: $white;
         }
     }
+
+
+    .main-nav__item--cyber-security {
+        &:hover .main-nav__item-link {
+            background-color: map-get($map: $services-colours, $key: 'cyber security');
+        }
+
+        .main-nav__submenu {
+            background-color: darken((map-get($map: $services-colours, $key: 'cyber security')), 10%);
+        }
+
+        &:hover .main-nav__item-link::after {
+            border-top-color: map-get($map: $services-colours, $key: 'cyber security');
+        }
+        
+        i {
+            color: darken((map-get($map: $services-colours, $key: 'cyber security')), 10%);
+        }
+
+        &:hover i {
+            color: $white;
+        }
+    }
+
+    .main-nav__item--developer-training {
+        &:hover .main-nav__item-link {
+            background-color: map-get($map: $services-colours, $key: 'developer training');
+        }
+
+        .main-nav__submenu {
+            background-color: darken((map-get($map: $services-colours, $key: 'developer training')), 10%);
+        }
+
+        &:hover .main-nav__item-link::after {
+            border-top-color: map-get($map: $services-colours, $key: 'developer training');
+        }
+        
+        i {
+            color: darken((map-get($map: $services-colours, $key: 'developer training')), 10%);
+        }
+
+        &:hover i {
+            color: $white;
+        }
+    }
+
