@@ -251,39 +251,54 @@ main {
 }
 
 /* line 99, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
-.footer__sm-link svg {
-  height: 1.5rem;
+.footer__sm-link i {
+  font-size: 2rem;
 }
 
-/* line 103, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
-.footer__sm-link path {
-  fill: #fff;
+/* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.footer__sm-link .footer__sm-link--facebook a, .footer__sm-link .footer__sm-link--facebook:hover {
+  background-color: #3b5998;
 }
 
-/* line 110, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.footer__sm-link .footer__sm-link--linkedin a, .footer__sm-link .footer__sm-link--linkedin:hover {
+  background-color: #0077b5;
+}
+
+/* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.footer__sm-link .footer__sm-link--twitter a, .footer__sm-link .footer__sm-link--twitter:hover {
+  background-color: #1da1f2;
+}
+
+/* line 81, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/abstracts/_mixins.scss */
+.footer__sm-link .footer__sm-link--instagram a, .footer__sm-link .footer__sm-link--instagram:hover {
+  background-color: #e4405f;
+}
+
+/* line 111, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__nav-list {
   list-style-type: none;
   font-size: 0.8rem;
 }
 
-/* line 116, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 117, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__nav-item {
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
 }
 
-/* line 122, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 123, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__nav-link {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 127, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 128, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__nav-link:hover {
   text-decoration: underline;
 }
 
-/* line 133, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 134, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__copyright-section {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -292,7 +307,7 @@ main {
   color: #fff;
 }
 
-/* line 143, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 144, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__copyright-text {
   display: block;
   font-size: .8125rem;
@@ -300,20 +315,20 @@ main {
 }
 
 @media (min-width: 768px) {
-  /* line 143, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  /* line 144, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
   .footer__copyright-text {
     display: inline;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 155, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  /* line 156, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
   .footer__copyright-text + .footer__copyright-text::after {
     content: ' - ';
   }
 }
 
-/* line 162, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 163, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__nav-link--sitemap {
   display: block;
   font-size: 0.8rem;
@@ -321,20 +336,20 @@ main {
   text-decoration: none;
 }
 
-/* line 169, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 170, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__nav-link--sitemap:hover {
   text-decoration: underline;
 }
 
 @media (min-width: 768px) {
-  /* line 162, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  /* line 163, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
   .footer__nav-link--sitemap {
     display: inline;
     margin-left: 0.2rem;
   }
 }
 
-/* line 183, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+/* line 184, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
 .footer__flex-parent-container--tertiary-nav {
   display: flex;
   margin-top: 5%;
@@ -342,21 +357,21 @@ main {
 }
 
 @media (min-width: 768px) {
-  /* line 183, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  /* line 184, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
   .footer__flex-parent-container--tertiary-nav {
     flex-direction: row;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 195, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  /* line 196, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
   .footer__flex-item-container--nav-list {
     width: calc(50% - 2rem);
   }
 }
 
 @media (min-width: 992px) {
-  /* line 195, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
+  /* line 196, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_footer.scss */
   .footer__flex-item-container--nav-list {
     width: calc(25% - 2rem);
   }

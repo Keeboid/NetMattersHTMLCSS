@@ -96,13 +96,14 @@
 
     background-color: $darker-grey;
 
-    svg {
-        height: 1.5rem;
+    i {
+        font-size: 2rem;
     }
 
-    path {
-        fill: $white;
-    }
+    @include sm-link-bg-colour-hover('facebook');
+    @include sm-link-bg-colour-hover('linkedin');
+    @include sm-link-bg-colour-hover('twitter');
+    @include sm-link-bg-colour-hover('instagram');
 
 }
 
@@ -204,3 +205,5 @@
         width: calc(25% - #{$gap}); //was 25%
     }
 }
+
+//sm link
