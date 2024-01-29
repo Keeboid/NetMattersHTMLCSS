@@ -219,7 +219,7 @@ i {
 /////=====header general layout=====///// 
 
 .header { //header disappears when scrolling down; appears when scrolling up
-    position: fixed;
+    //position: fixed;
     top: 0;
     width: 100%;
     z-index: 15;

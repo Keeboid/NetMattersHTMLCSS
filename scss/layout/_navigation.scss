@@ -29,6 +29,7 @@
 
     &:hover .main-nav__submenu {
         display: block;
+        z-index: 15;
     }
 
     &:hover .main-nav__item-link::after{
