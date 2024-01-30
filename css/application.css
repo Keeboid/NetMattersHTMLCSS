@@ -779,7 +779,12 @@ main {
   }
 }
 
-/* line 56, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 55, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+.main-nav__item i {
+  font-size: 1.35rem;
+}
+
+/* line 60, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item-link {
   position: relative;
   display: flex;
@@ -789,12 +794,12 @@ main {
   text-decoration: none;
 }
 
-/* line 64, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 68, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item-link:hover {
   text-decoration: none;
 }
 
-/* line 69, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 73, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu {
   display: none;
   position: absolute;
@@ -804,14 +809,14 @@ main {
   padding-bottom: 3rem;
 }
 
-/* line 78, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 82, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-/* line 83, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 87, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-list li {
   width: 33%;
   padding: 0.625rem 1rem 0.625rem 0;
@@ -820,7 +825,7 @@ main {
   list-style: none;
 }
 
-/* line 90, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 94, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-list li a {
   display: flex;
   align-items: center;
@@ -828,219 +833,220 @@ main {
   text-decoration: none;
 }
 
-/* line 96, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 100, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-list li a i {
   width: 1.25rem;
   margin-bottom: 0;
   margin-right: 0.25rem;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
-/* line 102, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 107, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-list li a i:hover {
   text-decoration: none;
 }
 
-/* line 110, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 115, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item-text {
   display: block;
   text-transform: uppercase;
 }
 
-/* line 115, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 120, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-heading {
   font-size: 2rem;
   font-weight: 600;
   padding-left: 2rem;
 }
 
-/* line 121, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 126, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__submenu-list {
   font-size: 1.2rem;
 }
 
-/* line 125, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 130, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item-text--small {
   font-size: 0.625rem;
   line-height: 0.5rem;
 }
 
-/* line 130, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 135, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item-text--large {
   font-size: 1.125rem;
 }
 
-/* line 142, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 147, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--bespoke-software:hover .main-nav__item-link {
   background-color: #67809F;
 }
 
-/* line 146, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 151, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--bespoke-software .main-nav__submenu {
   background-color: #526781;
 }
 
-/* line 150, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 155, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--bespoke-software:hover .main-nav__item-link::after {
   border-top-color: #67809F;
 }
 
-/* line 154, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 159, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--bespoke-software i {
   color: #526781;
 }
 
-/* line 158, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 163, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--bespoke-software:hover i {
   color: #fff;
 }
 
-/* line 165, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 170, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--it-support:hover .main-nav__item-link {
   background-color: #4183D7;
 }
 
-/* line 169, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 174, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--it-support .main-nav__submenu {
   background-color: #286abd;
 }
 
-/* line 173, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 178, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--it-support:hover .main-nav__item-link::after {
   border-top-color: #4183D7;
 }
 
-/* line 177, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 182, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--it-support i {
   color: #286abd;
 }
 
-/* line 181, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 186, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--it-support:hover i {
   color: #fff;
 }
 
-/* line 188, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 193, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--digital-marketing:hover .main-nav__item-link {
   background-color: #2ECC71;
 }
 
-/* line 192, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 197, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--digital-marketing .main-nav__submenu {
   background-color: #25a25a;
 }
 
-/* line 196, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 201, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--digital-marketing:hover .main-nav__item-link::after {
   border-top-color: #2ECC71;
 }
 
-/* line 200, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 205, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--digital-marketing i {
   color: #25a25a;
 }
 
-/* line 204, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 209, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--digital-marketing:hover i {
   color: #fff;
 }
 
-/* line 210, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 215, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--telecoms-services:hover .main-nav__item-link {
   background-color: #D64541;
 }
 
-/* line 214, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 219, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--telecoms-services .main-nav__submenu {
   background-color: #bc2c28;
 }
 
-/* line 218, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 223, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--telecoms-services:hover .main-nav__item-link::after {
   border-top-color: #D64541;
 }
 
-/* line 222, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 227, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--telecoms-services i {
   color: #bc2c28;
 }
 
-/* line 226, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 231, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--telecoms-services:hover i {
   color: #fff;
 }
 
-/* line 232, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 237, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--web-design:hover .main-nav__item-link {
   background-color: #926FB1;
 }
 
-/* line 236, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 241, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--web-design .main-nav__submenu {
   background-color: #79539a;
 }
 
-/* line 240, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 245, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--web-design:hover .main-nav__item-link::after {
   border-top-color: #926FB1;
 }
 
-/* line 244, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 249, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--web-design i {
   color: #79539a;
 }
 
-/* line 248, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 253, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--web-design:hover i {
   color: #fff;
 }
 
-/* line 255, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 260, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--cyber-security:hover .main-nav__item-link {
   background-color: #F62459;
 }
 
-/* line 259, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 264, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--cyber-security .main-nav__submenu {
   background-color: #de093f;
 }
 
-/* line 263, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 268, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--cyber-security:hover .main-nav__item-link::after {
   border-top-color: #F62459;
 }
 
-/* line 267, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 272, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--cyber-security i {
   color: #de093f;
 }
 
-/* line 271, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 276, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--cyber-security:hover i {
   color: #fff;
 }
 
-/* line 277, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 282, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--developer-training:hover .main-nav__item-link {
   background-color: #CE4125;
 }
 
-/* line 281, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 286, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--developer-training .main-nav__submenu {
   background-color: #a3331d;
 }
 
-/* line 285, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 290, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--developer-training:hover .main-nav__item-link::after {
   border-top-color: #CE4125;
 }
 
-/* line 289, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 294, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--developer-training i {
   color: #a3331d;
 }
 
-/* line 293, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
+/* line 298, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_navigation.scss */
 .main-nav__item--developer-training:hover i {
   color: #fff;
 }

@@ -51,6 +51,10 @@
             border-width: 2.25rem 80px 0px 80px; //was 83
         }
     }
+
+    i {
+        font-size: 1.35rem;
+    }
 }
 
 .main-nav__item-link {
@@ -98,6 +102,7 @@
                 margin-bottom: 0;
                 margin-right: 0.25rem;
                 text-decoration: none;
+                font-size: 1.1rem;
 
                 &:hover {
                     text-decoration: none;
