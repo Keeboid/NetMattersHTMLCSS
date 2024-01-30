@@ -1151,14 +1151,16 @@ main {
 .newsletter-form__label a {
   text-decoration: underline;
   font-size: 1rem;
+  color: #272936;
+  font-weight: 600;
 }
 
-/* line 47, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 49, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label a:hover, .newsletter-form__label a:visited {
   color: #272936;
 }
 
-/* line 53, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 55, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__btn {
   background-color: #323544;
   margin-top: 0.7rem;
@@ -1170,14 +1172,14 @@ main {
   background-color: #121318;
 }
 
-/* line 60, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 62, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__checkbox-flex-container {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 66, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 68, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--text {
   width: 100%;
   height: 3rem;
@@ -1189,7 +1191,7 @@ main {
 }
 
 @media (min-width: 1260px) {
-  /* line 66, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+  /* line 68, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
   .newsletter-form__input--text {
     display: flex;
     flex-grow: 1;
@@ -1198,33 +1200,33 @@ main {
   }
 }
 
-/* line 84, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 86, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--text:focus {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
-/* line 91, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 93, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input-container--required label::after {
   content: '*';
   color: #d24d57;
   padding-left: 0.2em;
 }
 
-/* line 99, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 101, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--checkbox {
   opacity: 0;
   position: absolute;
 }
 
-/* line 104, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 106, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label[for="newsletter-form-preferences"] {
   display: flex;
   align-items: center;
 }
 
-/* line 109, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 111, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__label[for="newsletter-form-preferences"]::before {
   content: '';
   display: inline-block;
@@ -1237,7 +1239,7 @@ main {
   font-size: 1.25rem;
 }
 
-/* line 123, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
+/* line 125, C:/Users/Molly/Documents/NetMatters/NetMatters-Clone/scss/layout/_form.scss */
 .newsletter-form__input--checkbox:checked + newsletter-form__label::before {
   content: 'o';
   display: flex;
