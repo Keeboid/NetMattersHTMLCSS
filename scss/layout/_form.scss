@@ -57,6 +57,7 @@ padding: 3.125rem 0;
 @include background-with-darken-on-hover($dark-grey);
     margin-top: 0.7rem;
     background-color: $dark-grey;
+    font-size: 1.06rem;
 }
 
 .newsletter-form__checkbox-flex-container { //checkbox flex display
