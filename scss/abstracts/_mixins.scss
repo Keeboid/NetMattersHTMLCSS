@@ -102,12 +102,7 @@
 }
 
 
-//bg color of nav items in header
-
-
-
-
-//set color of icons 
+//set color of bg in drop down menu in nav menu
 @mixin service-background-colour-for-submenu($service-name) {
 
     $service-colour: map-get($services-colours, $service-name);
