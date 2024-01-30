@@ -41,14 +41,14 @@
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 2.25rem 67px 0px 67px;
+        border-width: 2.25rem 65px 0px 65px; //was67px
         //
         border-color: transparent transparent transparent;
         transform: translateX(-50%);
         z-index: 100;
 
         @include breakpoint(wide-to-extra-wide) {
-            border-width: 2.25rem 83px 0px 83px;
+            border-width: 2.25rem 80px 0px 80px; //was 83
         }
     }
 }
@@ -131,7 +131,10 @@
     font-size: 1.125rem;
 }
 
+
 //mixins
+//except my string replace mixin did not function
+//so please enjoy the lack of DRY (I am sorry)
 
 
 
