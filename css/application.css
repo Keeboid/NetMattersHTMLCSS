@@ -1433,12 +1433,16 @@ main {
 .welcome__paragraph {
   margin-bottom: 2rem;
   line-height: 1.875rem;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
 }
 
 .welcome__paragraph a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  font-size: 20px;
 }
 
 .welcome__paragraph a:hover {
@@ -1446,10 +1450,17 @@ main {
   font-weight: 600;
 }
 
+.welcome__button-group {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 25px;
+}
+
 .welcome__button {
   background-color: #212330;
   margin: 0 0.5rem 1rem 0;
   font-size: 1.25rem;
+  justify-content: flex-end;
 }
 
 .welcome__button:hover {
@@ -1458,6 +1469,7 @@ main {
 
 .welcome__testimonial {
   margin: 2rem;
+  font-weight: 600;
 }
 
 .welcome__stars {

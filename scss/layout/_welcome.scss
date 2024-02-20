@@ -33,17 +33,28 @@
 .welcome__paragraph {
     margin-bottom: 2rem;
     line-height: 1.875rem;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+
 
     a {
         color: $white;
         text-decoration: none;
         font-weight: 600;
+        font-size: 20px;
 
         &:hover {
             text-decoration: underline;
             font-weight: 600;
         }
     }
+}
+
+.welcome__button-group {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 25px;
 }
 
 .welcome__button {
@@ -54,10 +65,13 @@
     font-size: 1.25rem;
 
     @extend %arrow-icon-for-button;
+
+    justify-content: flex-end;
 }
 
 .welcome__testimonial {
     margin: 2rem;
+    font-weight: 600;
 }
 
 .welcome__stars {// placeholder
