@@ -54,6 +54,7 @@
     text-align: center;
     color: $white; //change this
     padding: 60px 15px;
+    flex-wrap: wrap;
 
     h1 {
         color: $white; //change
@@ -99,7 +100,7 @@
         text-align: left;
         align-content: start;
         align-items: start;
-        padding-left: 8.25rem;
+        padding-left: 2.25rem;
 
         h1{
             font-size: 4rem;

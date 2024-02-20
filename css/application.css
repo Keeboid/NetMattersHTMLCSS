@@ -366,6 +366,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 0;
 }
 
 .header__logo {
@@ -434,6 +435,7 @@ main {
   padding-bottom: 1rem;
   margin-right: 1rem;
   display: none;
+  border-radius: 3px;
 }
 
 @media (min-width: 992px) {
@@ -457,6 +459,7 @@ main {
   padding-bottom: 1rem;
   margin-right: 1rem;
   display: none;
+  border-radius: 3px;
 }
 
 @media (min-width: 992px) {
@@ -494,8 +497,9 @@ main {
 
 .header__search-input:focus {
   border-color: #5bc0de;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.75), 0 0 8px rgba(91, 192, 222, 0.6);
   outline: none;
+  box-shadow: 0px 0px 7px -1px #5bc0de;
+  border-right: 1px solid #5bc0de;
 }
 
 .header__search-button {
@@ -638,6 +642,7 @@ main {
 .main-nav-list {
   display: flex;
   list-style: none;
+  margin: 0 auto;
 }
 
 .main-nav__item {
@@ -1589,6 +1594,7 @@ main {
 .services__panel-description {
   color: #323544;
   font-size: 0.8125rem;
+  line-height: 1.375rem;
 }
 
 .services__panel-read-more-button {
@@ -1932,6 +1938,7 @@ main {
   text-align: center;
   color: #fff;
   padding: 60px 15px;
+  flex-wrap: wrap;
 }
 
 .carousel__content h1 {
@@ -1977,7 +1984,7 @@ main {
     text-align: left;
     align-content: start;
     align-items: start;
-    padding-left: 8.25rem;
+    padding-left: 2.25rem;
   }
   .carousel__content h1 {
     font-size: 4rem;
