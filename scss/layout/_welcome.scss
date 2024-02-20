@@ -23,6 +23,12 @@
     }
 }
 
+.flex-container__heading-view-more {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
 //rest
 
 .welcome__heading {
@@ -70,7 +76,7 @@
 }
 
 .welcome__testimonial {
-    margin: 2rem;
+   // margin: 2rem;
     font-weight: 600;
 }
 

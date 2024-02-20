@@ -1425,6 +1425,11 @@ main {
   }
 }
 
+.flex-container__heading-view-more {
+  display: flex;
+  justify-content: space-between;
+}
+
 .welcome__heading {
   margin-top: 0;
   font-size: 2.25rem;
@@ -1468,7 +1473,6 @@ main {
 }
 
 .welcome__testimonial {
-  margin: 2rem;
   font-weight: 600;
 }
 
