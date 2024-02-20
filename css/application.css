@@ -30,6 +30,14 @@ body {
   border: 0;
 }
 
+input[type="checkbox"]:checked {
+  background-color: #999AA1;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
 body {
   font-family: 'Poppins', Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
@@ -1068,7 +1076,7 @@ main {
   font-size: 1.25rem;
 }
 
-.newsletter-form__input--checkbox:checked + newsletter-form__label::before {
+.newsletter-form__input--checkbox:checked + newsletter-form__label:checked {
   content: 'o';
   display: flex;
   justify-content: center;
@@ -1902,6 +1910,11 @@ main {
 
 .services__panel--developer-training:hover:hover i {
   color: #CE4125;
+}
+
+.services__heading-flex-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .carousel {

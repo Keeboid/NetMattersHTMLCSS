@@ -1,0 +1,7 @@
+
+input[type="checkbox"]:checked{
+    background-color:$mid-grey-04;
+  }
+  input[type="checkbox"]:checked:after{
+    display:block;
+  }

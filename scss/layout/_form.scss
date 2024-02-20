@@ -123,7 +123,7 @@ padding: 3.125rem 0;
     font-size: 1.25rem;
 }
 
-.newsletter-form__input--checkbox:checked + newsletter-form__label::before {
+.newsletter-form__input--checkbox:checked + newsletter-form__label:checked { //was label::before 
     //when checkbox is checked
     content: 'o';
     display: flex;
