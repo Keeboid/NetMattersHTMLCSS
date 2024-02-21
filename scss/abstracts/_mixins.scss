@@ -78,7 +78,7 @@
     $social-media-colour: map-get($social-media-colours, $social-media-name);
 
     .footer__sm-link--#{ $social-media-name } {
-        a, &:hover {
+        i, a, &:hover {
             background-color: $social-media-colour;
         }
     }
