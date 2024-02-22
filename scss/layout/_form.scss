@@ -18,7 +18,7 @@ padding: 3.125rem 0;
 
     @include breakpoint(medium-to-wide) {
     flex-direction: row;
-    gap:5rem;
+    gap:2rem;
     
     align-content: space-between;
     }
@@ -77,6 +77,10 @@ padding: 3.125rem 0;
     font-size: 0.875rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
+
+    border-radius: 2px;
+
+
     @include breakpoint(wide-to-extra-wide) {
         display: flex;
         flex-grow: 1;
@@ -125,7 +129,7 @@ padding: 3.125rem 0;
 
 .newsletter-form__input--checkbox:checked + newsletter-form__label:checked { //was label::before 
     //when checkbox is checked
-    content: 'o';
+    content: '✓';
     display: flex;
     justify-content: center;
     align-items: center;
