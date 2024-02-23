@@ -1095,7 +1095,7 @@ main {
   .newsletter-form__input--text {
     display: flex;
     flex-grow: 1;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: space-between;
   }
 }
@@ -1541,6 +1541,7 @@ main {
   display: flex;
   margin-top: auto;
   margin-bottom: 25px;
+  position: relative;
 }
 
 .welcome__button {
@@ -1556,6 +1557,9 @@ main {
 
 .welcome__testimonial {
   font-weight: 600;
+  margin: 2rem !important;
+  margin-bottom: 3rem !important;
+  margin-left: 1rem !important;
 }
 
 .welcome__stars {

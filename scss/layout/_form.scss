@@ -69,7 +69,7 @@ padding: 3.125rem 0;
 .newsletter-form__input--text {
    //display: flex;
    // flex-grow:1
-    width:100%; //or 100%
+    width:100%; 
     height: 3rem;
     padding: 5px 15px;
     border: 1px solid $mid-grey-02;
@@ -84,7 +84,7 @@ padding: 3.125rem 0;
     @include breakpoint(wide-to-extra-wide) {
         display: flex;
         flex-grow: 1;
-        gap: 5rem;
+        gap: 2rem;
         justify-content: space-between;
     }
 

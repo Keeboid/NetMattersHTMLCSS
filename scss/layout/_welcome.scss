@@ -61,6 +61,7 @@
     display: flex;
     margin-top: auto;
     margin-bottom: 25px;
+    position: relative;
 }
 
 .welcome__button {
@@ -78,6 +79,9 @@
 .welcome__testimonial {
    // margin: 2rem;
     font-weight: 600;
+    margin: 2rem !important;
+    margin-bottom: 3rem !important;
+    margin-left: 1rem !important;
 }
 
 .welcome__stars {// placeholder
